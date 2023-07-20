@@ -6,4 +6,5 @@
 /engine/x64
 /game_launch/x64
 /mainui/x64
-/.fareast/dlls
+/.fareast/
+/.vs/
