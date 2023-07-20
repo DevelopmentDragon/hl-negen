@@ -1,6 +1,0 @@
-﻿  game.cpp
-D:\XashFE\dev\src\game_launch\game.cpp(67,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(D:\XashFE\dev\src\x64\Release\game.exe) does not match the Linker's OutputFile property value (D:\XashFE\negen.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
-C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(game) does not match the Linker's OutputFile property value (negen). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
-     Creating library D:\XashFE\dev\src\x64\Release\game.lib and object D:\XashFE\dev\src\x64\Release\game.exp
-  game.vcxproj -> D:\XashFE\dev\src\x64\Release\game.exe
