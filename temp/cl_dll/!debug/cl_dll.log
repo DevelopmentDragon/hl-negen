@@ -1,0 +1,446 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (.\..\temp\cl_dll\!debug\) contains files shared from another project (cl_dll.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  view.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\view.cpp(1446,10): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+  vgui_teammenu.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_teammenu.cpp(127,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_teammenu.cpp(185,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_teammenu.cpp(197,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_teammenu.cpp(212,7): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_teammenu.cpp(213,6): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_teammenu.cpp(222,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_teammenu.cpp(224,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_teammenu.cpp(225,6): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_teammenu.cpp(282,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_teammenu.cpp(286,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_teammenu.cpp(293,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_teammenu.cpp(296,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  vgui_TeamFortressViewport.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.h(154,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(179,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(182,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(631,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(632,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(636,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(713,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(729,5): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(767,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(772,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(776,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(780,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(795,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(914,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(949,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(984,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1072,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1405,4): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1411,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1412,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1415,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1432,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1455,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1456,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1468,4): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1476,4): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1566,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1568,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1577,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1578,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1579,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1587,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1590,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1593,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1615,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1648,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(1652,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(2195,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(2216,2): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(2253,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(2299,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.cpp(2329,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  vgui_SpectatorPanel.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_scorepanel.h(154,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SpectatorPanel.cpp(237,4): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  vgui_ServerBrowser.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ServerBrowser.cpp(134,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ServerBrowser.cpp(198,6): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ServerBrowser.cpp(208,6): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ServerBrowser.cpp(218,6): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ServerBrowser.cpp(229,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ServerBrowser.cpp(239,6): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ServerBrowser.cpp(409,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ServerBrowser.cpp(446,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  vgui_ScorePanel.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.h(154,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(264,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(326,10): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(423,27): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(490,10): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(504,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(687,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(697,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(701,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(704,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(711,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(715,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(728,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(732,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(736,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(749,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(778,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(780,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(784,7): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(791,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(794,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(797,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(877,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(878,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(890,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(891,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ScorePanel.cpp(892,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  vgui_SchemeManager.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(130,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(148,2): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(208,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(213,8): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(228,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(232,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(272,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(281,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(292,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(294,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(297,14): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(301,14): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(305,14): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(310,14): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(315,14): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(320,14): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(325,14): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(330,14): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(335,14): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(355,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(356,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(380,10): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(398,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_SchemeManager.cpp(449,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  vgui_MOTDWindow.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  vgui_int.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_int.cpp(54,3): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  vgui_CustomObjects.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_CustomObjects.cpp(56,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_CustomObjects.cpp(57,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_CustomObjects.cpp(69,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_CustomObjects.cpp(136,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_CustomObjects.cpp(140,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_CustomObjects.cpp(147,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_CustomObjects.cpp(156,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_CustomObjects.cpp(383,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  vgui_ControlConfigPanel.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ControlConfigPanel.cpp(196,6): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ControlConfigPanel.cpp(205,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ControlConfigPanel.cpp(206,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  vgui_ConsolePanel.cpp
+  vgui_ClassMenu.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ClassMenu.cpp(113,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ClassMenu.cpp(118,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ClassMenu.cpp(122,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ClassMenu.cpp(145,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ClassMenu.cpp(165,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ClassMenu.cpp(169,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ClassMenu.cpp(199,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_ClassMenu.cpp(320,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  util.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\util.cpp(129,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  tri.cpp
+  train.cpp
+  text_message.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\text_message.cpp(168,13): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\text_message.cpp(172,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\text_message.cpp(175,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\text_message.cpp(178,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\text_message.cpp(181,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\text_message.cpp(191,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\text_message.cpp(197,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\text_message.cpp(202,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\text_message.cpp(207,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  studio_util.cpp
+  StudioModelRenderer.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\StudioModelRenderer.cpp(986,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\StudioModelRenderer.cpp(1037,8): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  status_icons.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\status_icons.cpp(114,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\status_icons.cpp(142,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\status_icons.cpp(157,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  Generating Code...
+  Compiling...
+  statusbar.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\statusbar.cpp(144,9): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\statusbar.cpp(149,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\statusbar.cpp(154,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\statusbar.cpp(235,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  saytext.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\saytext.cpp(135,5): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\saytext.cpp(211,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\saytext.cpp(304,7): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\saytext.cpp(310,7): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\saytext.cpp(311,7): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  parsemsg.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\parsemsg.cpp(118,131): warning C4293: '<<': shift count negative or too big, undefined behavior
+D:\DevDragon\XashFE\dev\src\cl_dll\parsemsg.cpp(118,159): warning C4293: '<<': shift count negative or too big, undefined behavior
+D:\DevDragon\XashFE\dev\src\cl_dll\parsemsg.cpp(118,187): warning C4293: '<<': shift count negative or too big, undefined behavior
+D:\DevDragon\XashFE\dev\src\cl_dll\parsemsg.cpp(118,215): warning C4293: '<<': shift count negative or too big, undefined behavior
+  message.cpp
+  menu.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\menu.cpp(120,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\menu.cpp(156,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\menu.cpp(160,4): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\menu.cpp(166,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\menu.cpp(171,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  in_camera.cpp
+  inputw32.cpp
+  input.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\input.cpp(212,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\input.cpp(231,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\input.cpp(259,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  hud_update.cpp
+  hud_spectator.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(80,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(183,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(253,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(450,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(546,9): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(614,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(875,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(876,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(917,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(922,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(925,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(943,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(947,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(955,11): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(957,11): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(962,16): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(971,16): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(976,16): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(998,14): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(1011,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(1019,11): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(1021,11): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(1024,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(1028,16): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_spectator.cpp(1518,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  hud_servers.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(184,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(190,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(219,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(308,10): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(599,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(634,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(762,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(763,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(769,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(790,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(801,8): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(815,10): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(818,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(825,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(837,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_servers.cpp(853,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  hud_redraw.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud_redraw.cpp(233,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  hud_msg.cpp
+  hud.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_scorepanel.h(154,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud.cpp(456,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud.cpp(459,6): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud.cpp(500,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud.cpp(503,5): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud.cpp(586,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\hud.cpp(606,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  hl_weapons.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\cl_dll\hl\hl_weapons.cpp(84,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  hl_objects.cpp
+  hl_events.cpp
+  hl_baseentity.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  health.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\health.cpp(343,16): warning C4101: 'pdmg': unreferenced local variable
+  geiger.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\geiger.cpp(177,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...
+  Compiling...
+  GameStudioModelRenderer.cpp
+  flashlight.cpp
+  ev_hldm.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\ev_hldm.cpp(137,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ev_hldm.cpp(152,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ev_hldm.cpp(241,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ev_hldm.cpp(245,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ev_hldm.cpp(250,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ev_hldm.cpp(1547,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ev_hldm.cpp(1548,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ev_hldm.cpp(1549,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ev_hldm.cpp(1550,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ev_hldm.cpp(1551,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ev_hldm.cpp(1552,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ev_hldm.cpp(1555,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ev_common.cpp
+  events.cpp
+  entity.cpp
+  demo.cpp
+  death.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\death.cpp(169,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\death.cpp(170,2): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\death.cpp(203,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\death.cpp(220,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\death.cpp(230,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\death.cpp(291,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\death.cpp(293,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  crosshairs.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\crosshairs.cpp(73,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\crosshairs.cpp(90,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\crosshairs.cpp(770,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  com_weapons.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\com_weapons.cpp(61,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\com_weapons.cpp(64,7): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  cdll_int.cpp
+  battery.cpp
+  ammo_secondary.cpp
+  ammohistory.cpp
+  ammo.cpp
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(574,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(581,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\vgui_TeamFortressViewport.h(1099,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ammo.cpp(99,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ammo.cpp(110,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ammo.cpp(120,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ammo.cpp(168,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ammo.cpp(178,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ammo.cpp(190,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\cl_dll\ammo.cpp(652,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  voice_status.cpp
+D:\DevDragon\XashFE\dev\src\game_shared\voice_status.cpp(105,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_status.cpp(112,2): warning C4996: 'strupr': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strupr. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_status.cpp(254,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_status.cpp(408,3): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_status.cpp(449,6): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_status.cpp(509,3): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_status.cpp(515,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_status.cpp(521,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_status.cpp(546,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_status.cpp(547,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_status.cpp(555,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_status.cpp(640,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_status.cpp(643,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_status.cpp(868,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  voice_banmgr.cpp
+D:\DevDragon\XashFE\dev\src\game_shared\voice_banmgr.cpp(48,2): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_banmgr.cpp(51,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_banmgr.cpp(99,2): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_banmgr.cpp(101,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  vgui_slider2.cpp
+  vgui_scrollbar2.cpp
+  vgui_loadtga.cpp
+  Generating Code...
+D:\DevDragon\XashFE\dev\src\cl_dll\crosshairs.cpp(2622): warning C4700: uninitialized local variable 'a' used
+  Compiling...
+  vgui_listbox.cpp
+  vgui_helpers.cpp
+  vgui_grid.cpp
+  vgui_checkbutton2.cpp
+D:\DevDragon\XashFE\dev\src\game_shared\vgui_checkbutton2.cpp(110,2): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  weaponenum.cpp
+  tripmine.cpp
+  squeakgrenade.cpp
+  shotgun.cpp
+  satchel.cpp
+  rpg.cpp
+  python.cpp
+  mp5.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  hornetgun.cpp
+  handgrenade.cpp
+  glock.cpp
+  gauss.cpp
+  egon.cpp
+  dmg.cpp
+  crowbar.cpp
+  crossbow.cpp
+  Generating Code...
+  Compiling...
+  ammotype.cpp
+D:\DevDragon\XashFE\dev\src\dlls\ammotype.cpp(18,20): warning C4018: '<': signed/unsigned mismatch
+D:\DevDragon\XashFE\dev\src\dlls\ammotype.cpp(21,21): warning C4018: '<': signed/unsigned mismatch
+D:\DevDragon\XashFE\dev\src\dlls\ammotype.cpp(23,22): warning C4018: '<': signed/unsigned mismatch
+D:\DevDragon\XashFE\dev\src\dlls\ammotype.cpp(50,16): warning C4018: '<': signed/unsigned mismatch
+D:\DevDragon\XashFE\dev\src\dlls\ammotype.cpp(55,7): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  Generating Code...
+cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  pm_shared.c
+D:\DevDragon\XashFE\dev\src\pm_shared\pm_shared.c(154,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\pm_shared\pm_shared.c(157,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\pm_shared\pm_shared.c(160,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\pm_shared\pm_shared.c(243,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\pm_shared\pm_shared.c(268,9): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\pm_shared\pm_shared.c(483,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pm_math.c
+  pm_debug.c
+  Generating Code...
+ammotype.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library .\..\temp\cl_dll\!debug\client.lib and object .\..\temp\cl_dll\!debug\client.exp
+  cl_dll.vcxproj -> D:\DevDragon\XashFE\fareast\cl_dlls\client.dll

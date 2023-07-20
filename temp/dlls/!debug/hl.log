@@ -1,0 +1,400 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  zombie.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  xen.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  world.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\world.cpp(336,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\world.cpp(337,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\world.cpp(432,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  weapons.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\weapons.cpp(233,7): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\weapons.cpp(1109,20): warning C4018: '<': signed/unsigned mismatch
+D:\DevDragon\XashFE\dev\src\dlls\weapons.cpp(2412,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\weapons.cpp(2971,7): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  weaponenum.cpp
+  util.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\util.cpp(368,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\util.cpp(370,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\util.cpp(846,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\util.cpp(926,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\util.cpp(933,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\util.cpp(940,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\util.cpp(947,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\util.cpp(1112,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\util.cpp(1398,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\util.cpp(1411,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\util.cpp(1442,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\util.cpp(1628,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\util.cpp(2021,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\util.cpp(2272,9): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  turret.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  tripmine.cpp
+  triggers.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\triggers.cpp(763,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\triggers.cpp(1461,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\triggers.cpp(1468,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\triggers.cpp(1595,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\triggers.cpp(1605,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\triggers.cpp(1639,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\triggers.cpp(1640,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\triggers.cpp(1814,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\triggers.cpp(1819,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  tentacle.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  tempmonster.cpp
+  teamplay_gamerules.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(46,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(56,5): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(184,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(201,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(234,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(238,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(289,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(320,8): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(329,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(339,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(341,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(346,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(436,74): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(494,10): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(568,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(570,10): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(575,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(578,11): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\teamplay_gamerules.cpp(609,6): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  talkmonster.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  subs.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  squeakgrenade.cpp
+  squadmonster.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  spectator.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  soundent.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  sound.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1065,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1066,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1067,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1068,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1127,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1128,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1129,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1130,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1251,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1252,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1253,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1254,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1322,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1353,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1356,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1394,8): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1398,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1399,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1400,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1591,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1611,8): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\sound.cpp(1673,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  skill.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\skill.cpp(36,11): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...
+  Compiling...
+  singleplay_gamerules.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  shotgun.cpp
+  scripted.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  scientist.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  schedule.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  satchel.cpp
+  rpg.cpp
+  roach.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  rat.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  question.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  python.cpp
+  player.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(727,23): warning C4293: '<<': shift count negative or too big, undefined behavior
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(936,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(938,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(939,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(964,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(966,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(967,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(1039,6): warning C4101: 'air': unreferenced local variable
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(1466,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(1467,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(1485,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(1515,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(1528,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(1693,6): warning C4101: 'i': unreferenced local variable
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(1856,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(1857,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(4297,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  plats.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  plane.cpp
+  pathcorner.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  osprey.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  nodes.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(1276,27): warning C4474: 'fprintf' : too many arguments passed for format string
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(1276,27): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(1885,24): warning C4477: 'fprintf' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(1890,24): warning C4477: 'fprintf' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(1895,24): warning C4477: 'fprintf' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(1648,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(1650,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(1653,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(1654,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(1655,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(1657,9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2320,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2322,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2325,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2326,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2327,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2498,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2500,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2503,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2504,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2505,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2507,9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2622,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2623,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2624,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2626,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2627,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nodes.cpp(2628,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  nihilanth.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\nihilanth.cpp(312,38): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nihilanth.cpp(313,32): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nihilanth.cpp(314,35): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nihilanth.cpp(315,36): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nihilanth.cpp(316,32): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nihilanth.cpp(317,33): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nihilanth.cpp(722,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nihilanth.cpp(766,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nihilanth.cpp(814,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nihilanth.cpp(817,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nihilanth.cpp(1097,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\nihilanth.cpp(1100,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  multiplay_gamerules.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(97,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(111,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1296,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1305,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1317,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1346,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1458,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1461,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1462,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1464,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1489,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1504,7): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1506,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1524,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1525,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1576,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1579,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1584,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1630,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\multiplay_gamerules.cpp(1634,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  mp5.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  Generating Code...
+D:\DevDragon\XashFE\dev\src\dlls\player.cpp(4161): warning C4700: uninitialized local variable 'iAmmoIndex' used
+  Compiling...
+  mortar.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  monsterstate.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  monsters.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  monstermaker.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  maprules.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  lights.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\lights.cpp(154,7): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\lights.cpp(172,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\lights.cpp(174,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\lights.cpp(176,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\lights.cpp(191,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\lights.cpp(193,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\lights.cpp(195,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  leech.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  laserspot.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  items.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\items.cpp(248,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  islave.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  ichthyosaur.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  h_export.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  h_cycler.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  h_cine.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  h_battery.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  h_ai.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  houndeye.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  hornetgun.cpp
+  hornet.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  hgrunt.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  Generating Code...
+  Compiling...
+  healthkit.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  headcrab.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  hassassin.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  handgrenade.cpp
+  gman.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  glock.cpp
+  globals.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  ggrenade.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  genericmonster.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  gauss.cpp
+  gargantua.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\gargantua.cpp(1356,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  gamerules.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  game.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  func_tank.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  func_break.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\func_break.cpp(68,8): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\func_break.cpp(70,13): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  flyingmonster.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  explode.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\explode.cpp(264,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  egon.cpp
+  effects.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  doors.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  Generating Code...
+  Compiling...
+  dmg.cpp
+  defaultai.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\defaultai.cpp(1047,8): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  crowbar.cpp
+  crossbow.cpp
+  controller.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  combat.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  client.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\dlls\client.cpp(107,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\client.cpp(235,8): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\client.cpp(251,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\client.cpp(256,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\client.cpp(283,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\client.cpp(285,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\client.cpp(291,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\client.cpp(292,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\client.cpp(697,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\client.cpp(726,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\client.cpp(741,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\client.cpp(1832,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\dlls\client.cpp(2045,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  cbase.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  buttons.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  bullsquid.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  bmodels.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  bloater.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  bigmomma.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  barney.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  barnacle.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  apache.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  animation.cpp
+D:\DevDragon\XashFE\dev\src\dlls\animation.cpp(168,7): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  animating.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  ammotype.cpp
+D:\DevDragon\XashFE\dev\src\dlls\ammotype.cpp(18,20): warning C4018: '<': signed/unsigned mismatch
+D:\DevDragon\XashFE\dev\src\dlls\ammotype.cpp(21,21): warning C4018: '<': signed/unsigned mismatch
+D:\DevDragon\XashFE\dev\src\dlls\ammotype.cpp(23,22): warning C4018: '<': signed/unsigned mismatch
+D:\DevDragon\XashFE\dev\src\dlls\ammotype.cpp(50,16): warning C4018: '<': signed/unsigned mismatch
+D:\DevDragon\XashFE\dev\src\dlls\ammotype.cpp(55,7): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  airtank.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  Generating Code...
+  Compiling...
+  agrunt.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  aflock.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  voice_gamemgr.cpp
+D:\DevDragon\XashFE\dev\src\dlls\util.h(253,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+D:\DevDragon\XashFE\dev\src\game_shared\voice_gamemgr.cpp(56,8): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_gamemgr.cpp(76,2): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_gamemgr.cpp(176,14): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_gamemgr.cpp(182,4): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\game_shared\voice_gamemgr.cpp(199,10): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  Generating Code...
+cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  pm_shared.c
+D:\DevDragon\XashFE\dev\src\pm_shared\pm_shared.c(154,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\pm_shared\pm_shared.c(157,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\pm_shared\pm_shared.c(160,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\pm_shared\pm_shared.c(243,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\pm_shared\pm_shared.c(268,9): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+D:\DevDragon\XashFE\dev\src\pm_shared\pm_shared.c(483,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pm_math.c
+  pm_debug.c
+  Generating Code...
+voice_gamemgr.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library .\..\temp\dlls\!debug\hl.lib and object .\..\temp\dlls\!debug\hl.exp
+  hl.vcxproj -> D:\DevDragon\XashFE\fareast\dlls\hl.dll

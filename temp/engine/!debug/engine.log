@@ -1,0 +1,256 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  sv_world.c
+  sv_save.c
+D:\DevDragon\XashFE\dev\src\engine\client\sound.h(344,101): warning C4030: first formal parameter list longer than the second list
+D:\DevDragon\XashFE\dev\src\engine\server\sv_save.c(1163,104): warning C4020: 'S_StreamGetCurrentState': too many actual parameters
+D:\DevDragon\XashFE\dev\src\engine\server\sv_save.c(2370,13): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  sv_pmove.c
+  sv_phys.c
+D:\DevDragon\XashFE\dev\src\engine\server\sv_phys.c(2035,2): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(const vec_t *,const vec_t *,const vec_t *)' to 'int (__cdecl *)(const float *,const float *,const float *)'
+  sv_move.c
+  sv_main.c
+  sv_log.c
+D:\DevDragon\XashFE\dev\src\engine\server\sv_log.c(42,10): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\server\sv_log.c(109,10): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  sv_init.c
+  sv_game.c
+  sv_frame.c
+  sv_custom.c
+  sv_cmds.c
+  sv_client.c
+  zone.c
+  world.c
+  titles.c
+  sys_win.c
+  sys_con.c
+D:\DevDragon\XashFE\dev\src\engine\common\sys_con.c(488,19): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  snd_wav.c
+D:\DevDragon\XashFE\dev\src\engine\common\soundlib\soundlib.h(80,2): warning C4091: 'typedef ': ignored on left of 'stream_s' when no variable is declared
+  snd_utils.c
+D:\DevDragon\XashFE\dev\src\engine\common\soundlib\soundlib.h(80,2): warning C4091: 'typedef ': ignored on left of 'stream_s' when no variable is declared
+  Generating Code...
+  Compiling...
+  snd_mp3.c
+D:\DevDragon\XashFE\dev\src\engine\common\soundlib\soundlib.h(80,2): warning C4091: 'typedef ': ignored on left of 'stream_s' when no variable is declared
+  snd_main.c
+D:\DevDragon\XashFE\dev\src\engine\common\soundlib\soundlib.h(80,2): warning C4091: 'typedef ': ignored on left of 'stream_s' when no variable is declared
+  pm_trace.c
+  pm_surface.c
+  pm_debug.c
+  net_ws.c
+  net_encode.c
+  net_chan.c
+  net_buffer.c
+D:\DevDragon\XashFE\dev\src\engine\common\net_buffer.c(426,24): warning C4047: 'function': 'int' differs in levels of indirection from 'float *'
+D:\DevDragon\XashFE\dev\src\engine\common\net_buffer.c(426,24): warning C4024: 'MSG_WriteSBitLong': different types for formal and actual parameter 2
+  mod_studio.c
+  mod_dbghulls.c
+  mod_bmodel.c
+D:\DevDragon\XashFE\dev\src\engine\common\mod_bmodel.c(1600,23): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  model.c
+  matrixlib.c
+  mathlib.c
+  library.c
+  keys.c
+  input.c
+  infostring.c
+  img_wad.c
+  Generating Code...
+  Compiling...
+  img_utils.c
+  img_tga.c
+  img_quant.c
+  img_main.c
+  img_dds.c
+  img_bmp.c
+  hpak.c
+  host_state.c
+  host.c
+  gamma.c
+  filesystem.c
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(74,2): warning C4091: 'typedef ': ignored on left of 'file_s' when no variable is declared
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(85,2): warning C4091: 'typedef ': ignored on left of 'wfile_s' when no variable is declared
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(412,15): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _open. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(421,2): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(427,3): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(435,3): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(445,3): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(453,3): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(458,2): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(460,23): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(464,3): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1541,17): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _open. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1549,22): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1553,7): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1573,6): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1576,15): warning C4996: 'dup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _dup. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1602,14): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _open. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1605,2): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1731,34): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1863,6): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1885,3): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1891,11): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1892,19): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1951,3): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1952,8): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1966,3): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(1967,8): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(2043,8): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\filesystem.c(2155,6): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+  cvar.c
+  custom.c
+  crtlib.c
+D:\DevDragon\XashFE\dev\src\engine\common\crtlib.c(476,11): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\DevDragon\XashFE\dev\src\engine\common\crtlib.c(566,12): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  crclib.c
+  con_utils.c
+  console.c
+  common.c
+  cmd.c
+  cfgscript.c
+  Generating Code...
+  Compiling...
+  build.c
+  avikit.c
+  vgui_draw.c
+  s_vox.c
+D:\DevDragon\XashFE\dev\src\engine\client\sound.h(344,101): warning C4030: first formal parameter list longer than the second list
+  s_utils.c
+D:\DevDragon\XashFE\dev\src\engine\client\sound.h(344,101): warning C4030: first formal parameter list longer than the second list
+  s_stream.c
+D:\DevDragon\XashFE\dev\src\engine\client\sound.h(344,101): warning C4030: first formal parameter list longer than the second list
+D:\DevDragon\XashFE\dev\src\engine\client\s_stream.c(148,22): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+D:\DevDragon\XashFE\dev\src\engine\client\s_stream.c(157,23): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+D:\DevDragon\XashFE\dev\src\engine\client\s_stream.c(168,27): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+D:\DevDragon\XashFE\dev\src\engine\client\s_stream.c(222,1): warning C4029: declared formal parameter list different from definition
+  s_mouth.c
+D:\DevDragon\XashFE\dev\src\engine\client\sound.h(344,101): warning C4030: first formal parameter list longer than the second list
+  s_mix.c
+D:\DevDragon\XashFE\dev\src\engine\client\sound.h(344,101): warning C4030: first formal parameter list longer than the second list
+  s_main.c
+D:\DevDragon\XashFE\dev\src\engine\client\sound.h(344,101): warning C4030: first formal parameter list longer than the second list
+  s_load.c
+D:\DevDragon\XashFE\dev\src\engine\client\sound.h(344,101): warning C4030: first formal parameter list longer than the second list
+  s_dsp.c
+D:\DevDragon\XashFE\dev\src\engine\client\sound.h(344,101): warning C4030: first formal parameter list longer than the second list
+  s_backend.c
+D:\DevDragon\XashFE\dev\src\engine\client\sound.h(344,101): warning C4030: first formal parameter list longer than the second list
+  gl_warp.c
+  gl_vidnt.c
+  gl_studio.c
+  gl_sprite.c
+  gl_rsurf.c
+  gl_rpart.c
+  gl_rmisc.c
+  gl_rmath.c
+  Generating Code...
+  Compiling...
+  gl_rmain.c
+D:\DevDragon\XashFE\dev\src\engine\client\gl_rmain.c(1527,2): warning C4113: 'int (__cdecl *)(const char *,int,int,const void *,texFlags_t)' differs in parameter lists from 'int (__cdecl *)(const char *,int,int,const void *,int)'
+D:\DevDragon\XashFE\dev\src\engine\client\gl_rmain.c(1529,2): warning C4113: 'int (__cdecl *)(const char *,int,int,int,const void *,texFlags_t)' differs in parameter lists from 'int (__cdecl *)(const char *,int,int,int,const void *,int)'
+D:\DevDragon\XashFE\dev\src\engine\client\gl_rmain.c(1535,2): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(movie_state_t *,long *,long *,float *)' to 'int (__cdecl *)(void *,long *,long *,float *)'
+D:\DevDragon\XashFE\dev\src\engine\client\gl_rmain.c(1540,2): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(movie_state_t *)' to 'int (__cdecl *)(void *)'
+D:\DevDragon\XashFE\dev\src\engine\client\gl_rmain.c(1557,2): warning C4113: 'void (__cdecl *)(const float *,const char *,int,int)' differs in parameter lists from 'void (__cdecl *)(const float *,const char *,qboolean,int)'
+  gl_rlight.c
+  gl_refrag.c
+  gl_mirror.c
+D:\DevDragon\XashFE\dev\src\engine\client\gl_mirror.c(160,26): warning C4002: too many arguments for function-like macro invocation 'GL_LoadTextureInternal'
+  gl_image.c
+  gl_frustum.c
+  gl_draw.c
+D:\DevDragon\XashFE\dev\src\engine\client\gl_draw.c(138,115): warning C4028: formal parameter 7 different from declaration
+D:\DevDragon\XashFE\dev\src\engine\client\gl_draw.c(138,149): warning C4028: formal parameter 9 different from declaration
+D:\DevDragon\XashFE\dev\src\engine\client\gl_draw.c(139,1): warning C4029: declared formal parameter list different from definition
+  gl_downsample.c
+  gl_decals.c
+  gl_cull.c
+  gl_beams.c
+  gl_backend.c
+  gl_alias.c
+  cl_view.c
+D:\DevDragon\XashFE\dev\src\engine\client\sound.h(344,101): warning C4030: first formal parameter list longer than the second list
+  cl_video.c
+  cl_tent.c
+D:\DevDragon\XashFE\dev\src\engine\client\sound.h(344,101): warning C4030: first formal parameter list longer than the second list
+  cl_scrn.c
+  cl_remap.c
+  cl_qparse.c
+D:\DevDragon\XashFE\dev\src\engine\client\cl_qparse.c(971,78): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\DevDragon\XashFE\dev\src\engine\client\cl_qparse.c(1011,79): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\DevDragon\XashFE\dev\src\engine\client\cl_qparse.c(1016,78): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\DevDragon\XashFE\dev\src\engine\client\cl_qparse.c(1041,82): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+  cl_pmove.c
+  Generating Code...
+  Compiling...
+  cl_parse.c
+D:\DevDragon\XashFE\dev\src\engine\client\cl_parse.c(2039,78): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\DevDragon\XashFE\dev\src\engine\client\cl_parse.c(2081,78): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\DevDragon\XashFE\dev\src\engine\client\cl_parse.c(2116,79): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\DevDragon\XashFE\dev\src\engine\client\cl_parse.c(2129,78): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\DevDragon\XashFE\dev\src\engine\client\cl_parse.c(2136,78): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\DevDragon\XashFE\dev\src\engine\client\cl_parse.c(2143,82): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\DevDragon\XashFE\dev\src\engine\client\cl_parse.c(2190,53): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\DevDragon\XashFE\dev\src\engine\client\cl_parse.c(2191,92): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\DevDragon\XashFE\dev\src\engine\client\cl_parse.c(2195,53): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\DevDragon\XashFE\dev\src\engine\client\cl_parse.c(2196,92): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\DevDragon\XashFE\dev\src\engine\client\cl_parse.c(2246,76): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\DevDragon\XashFE\dev\src\engine\client\cl_parse.c(1980,20): warning C4101: 'param2': unreferenced local variable
+D:\DevDragon\XashFE\dev\src\engine\client\cl_parse.c(1981,17): warning C4101: 'byParam2': unreferenced local variable
+D:\DevDragon\XashFE\dev\src\engine\client\cl_parse.c(1982,18): warning C4101: 'flParam2': unreferenced local variable
+  cl_netgraph.c
+  cl_main.c
+  cl_gameui.c
+D:\DevDragon\XashFE\dev\src\engine\client\cl_gameui.c(624,148): warning C4020: 'R_DrawStretchPicCircleRotate': too many actual parameters
+D:\DevDragon\XashFE\dev\src\engine\client\cl_gameui.c(1049,2): warning C4113: 'qboolean (__cdecl *)(const char *,qboolean)' differs in parameter lists from 'int (__cdecl *)(const char *,int)'
+D:\DevDragon\XashFE\dev\src\engine\client\cl_gameui.c(1049,2): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(const char *,qboolean)' to 'int (__cdecl *)(const char *,int)'
+D:\DevDragon\XashFE\dev\src\engine\client\cl_gameui.c(1051,2): warning C4113: 'qboolean (__cdecl *)(qboolean)' differs in parameter lists from 'int (__cdecl *)(int)'
+D:\DevDragon\XashFE\dev\src\engine\client\cl_gameui.c(1051,2): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(qboolean)' to 'int (__cdecl *)(int)'
+D:\DevDragon\XashFE\dev\src\engine\client\cl_gameui.c(1052,2): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(void)' to 'int (__cdecl *)(void)'
+D:\DevDragon\XashFE\dev\src\engine\client\cl_gameui.c(1062,2): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(int)' to 'int (__cdecl *)(int)'
+D:\DevDragon\XashFE\dev\src\engine\client\cl_gameui.c(1071,2): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(const char *,char *)' to 'int (__cdecl *)(const char *,char *)'
+D:\DevDragon\XashFE\dev\src\engine\client\cl_gameui.c(1072,2): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(const char *,char *)' to 'int (__cdecl *)(const char *,char *)'
+D:\DevDragon\XashFE\dev\src\engine\client\cl_gameui.c(1075,2): warning C4113: 'void (__cdecl *)(const char *,const char *,qboolean)' differs in parameter lists from 'void (__cdecl *)(const char *,const char *,int)'
+D:\DevDragon\XashFE\dev\src\engine\client\cl_gameui.c(1078,2): warning C4113: 'void (__cdecl *)(const char *,const char *,long,int,int,int)' differs in parameter lists from 'void (__cdecl *)(const char *,const char *)'
+D:\DevDragon\XashFE\dev\src\engine\client\cl_gameui.c(1088,2): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(const char *)' to 'int (__cdecl *)(const char *)'
+  cl_game.c
+D:\DevDragon\XashFE\dev\src\engine\client\sound.h(344,101): warning C4030: first formal parameter list longer than the second list
+D:\DevDragon\XashFE\dev\src\engine\client\cl_game.c(941,3): warning C4033: 'CL_GetCrosshairPosX' must return a value
+D:\DevDragon\XashFE\dev\src\engine\client\cl_game.c(968,3): warning C4033: 'CL_GetCrosshairPosY' must return a value
+D:\DevDragon\XashFE\dev\src\engine\client\cl_game.c(3907,2): warning C4113: 'void (__cdecl *)(int)' differs in parameter lists from 'void (__cdecl *)(TRICULLSTYLE)'
+D:\DevDragon\XashFE\dev\src\engine\client\cl_game.c(3909,2): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(const vec_t *,vec_t *)' to 'int (__cdecl *)(float *,float *)'
+D:\DevDragon\XashFE\dev\src\engine\client\cl_game.c(4117,2): warning C4113: 'void (__cdecl *)(int,qboolean)' differs in parameter lists from 'void (__cdecl *)(int,int)'
+D:\DevDragon\XashFE\dev\src\engine\client\cl_game.c(4135,2): warning C4113: 'void (__cdecl *)(int,float,byte)' differs in parameter lists from 'void (__cdecl *)(int,float,byte,int)'
+D:\DevDragon\XashFE\dev\src\engine\client\cl_game.c(4139,2): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(void)' to 'int (__cdecl *)()'
+  cl_frame.c
+D:\DevDragon\XashFE\dev\src\engine\client\sound.h(344,101): warning C4030: first formal parameter list longer than the second list
+  cl_events.c
+  cl_demo.c
+  cl_debug.c
+  cl_custom.c
+  cl_cmds.c
+  Generating Code...
+D:\DevDragon\XashFE\dev\src\engine\client\cl_game.c(962): warning C4715: 'CL_GetCrosshairPosX': not all control paths return a value
+D:\DevDragon\XashFE\dev\src\engine\client\cl_game.c(989): warning C4715: 'CL_GetCrosshairPosY': not all control paths return a value
+D:\DevDragon\XashFE\dev\src\engine\client\cl_gameui.c(789): warning C4789: buffer 'rvp' of size 4 bytes will be overrun; 4 bytes will be written starting at offset 52
+cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  vgui_surf.cpp
+  vgui_int.cpp
+  vgui_input.cpp
+  vgui_clip.cpp
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1389,5): warning MSB8012: TargetPath(D:\DevDragon\XashFE\engine.dll) does not match the Linker's OutputFile property value (D:\DevDragon\XashFE\xash.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1391,5): warning MSB8012: TargetName(engine) does not match the Linker's OutputFile property value (xash). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library .\..\temp\engine\!debug\xash.lib and object .\..\temp\engine\!debug\xash.exp
+mpeg_dbg.lib(dct36.obj) : warning LNK4099: PDB '' was not found with 'mpeg_dbg.lib(dct36.obj)' or at ''; linking object as if no debug info
+mpeg_dbg.lib(dct64.obj) : warning LNK4099: PDB '' was not found with 'mpeg_dbg.lib(dct64.obj)' or at ''; linking object as if no debug info
+mpeg_dbg.lib(format.obj) : warning LNK4099: PDB '' was not found with 'mpeg_dbg.lib(format.obj)' or at ''; linking object as if no debug info
+mpeg_dbg.lib(frame.obj) : warning LNK4099: PDB '' was not found with 'mpeg_dbg.lib(frame.obj)' or at ''; linking object as if no debug info
+mpeg_dbg.lib(index.obj) : warning LNK4099: PDB '' was not found with 'mpeg_dbg.lib(index.obj)' or at ''; linking object as if no debug info
+mpeg_dbg.lib(layer3.obj) : warning LNK4099: PDB '' was not found with 'mpeg_dbg.lib(layer3.obj)' or at ''; linking object as if no debug info
+mpeg_dbg.lib(libmpg.obj) : warning LNK4099: PDB '' was not found with 'mpeg_dbg.lib(libmpg.obj)' or at ''; linking object as if no debug info
+mpeg_dbg.lib(mpg123.obj) : warning LNK4099: PDB '' was not found with 'mpeg_dbg.lib(mpg123.obj)' or at ''; linking object as if no debug info
+mpeg_dbg.lib(parse.obj) : warning LNK4099: PDB '' was not found with 'mpeg_dbg.lib(parse.obj)' or at ''; linking object as if no debug info
+mpeg_dbg.lib(reader.obj) : warning LNK4099: PDB '' was not found with 'mpeg_dbg.lib(reader.obj)' or at ''; linking object as if no debug info
+mpeg_dbg.lib(synth.obj) : warning LNK4099: PDB '' was not found with 'mpeg_dbg.lib(synth.obj)' or at ''; linking object as if no debug info
+mpeg_dbg.lib(tabinit.obj) : warning LNK4099: PDB '' was not found with 'mpeg_dbg.lib(tabinit.obj)' or at ''; linking object as if no debug info
+  engine.vcxproj -> D:\DevDragon\XashFE\engine.dll

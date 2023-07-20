@@ -1,0 +1,726 @@
+﻿  cl_cmds.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  cl_custom.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  cl_debug.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  cl_demo.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\cl_demo.c(931,28): warning C4267: 'function': conversion from 'size_t' to 'long', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_demo.c(940,27): warning C4267: 'function': conversion from 'size_t' to 'long', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_demo.c(959,41): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  cl_events.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  cl_frame.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  cl_game.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\cl_game.c(664,45): warning C4133: 'function': incompatible types - from 'size_t *' to 'long *'
+D:\XashFE\dev\src\engine\client\cl_game.c(667,33): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_game.c(1220,40): warning C4133: 'function': incompatible types - from 'size_t *' to 'long *'
+D:\XashFE\dev\src\engine\client\cl_game.c(3593,1): warning C4028: formal parameter 1 different from declaration
+D:\XashFE\dev\src\engine\client\cl_game.c(3593,1): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(const vec_t *,vec_t *)' to 'int (__cdecl *)(float *,float *)'
+D:\XashFE\dev\src\engine\client\cl_game.c(3762,1): warning C4028: formal parameter 2 different from declaration
+D:\XashFE\dev\src\engine\client\cl_game.c(3762,1): warning C4113: 'void (__cdecl *)(int,float,byte)' differs in parameter lists from 'void (__cdecl *)(int,float,byte,int)'
+D:\XashFE\dev\src\engine\client\cl_game.c(3762,1): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(void)' to 'int (__cdecl *)()'
+  cl_gameui.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\cl_gameui.c(921,1): warning C4028: formal parameter 2 different from declaration
+D:\XashFE\dev\src\engine\client\cl_gameui.c(921,1): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(const char *,qboolean)' to 'int (__cdecl *)(const char *,int)'
+D:\XashFE\dev\src\engine\client\cl_gameui.c(921,1): warning C4028: formal parameter 1 different from declaration
+D:\XashFE\dev\src\engine\client\cl_gameui.c(921,1): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(qboolean)' to 'int (__cdecl *)(int)'
+D:\XashFE\dev\src\engine\client\cl_gameui.c(921,1): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(void)' to 'int (__cdecl *)(void)'
+D:\XashFE\dev\src\engine\client\cl_gameui.c(921,1): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(int)' to 'int (__cdecl *)(int)'
+D:\XashFE\dev\src\engine\client\cl_gameui.c(921,1): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(const char *,char *)' to 'int (__cdecl *)(const char *,char *)'
+D:\XashFE\dev\src\engine\client\cl_gameui.c(921,1): warning C4028: formal parameter 3 different from declaration
+D:\XashFE\dev\src\engine\client\cl_gameui.c(921,1): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(const char *)' to 'int (__cdecl *)(const char *)'
+  cl_main.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\cl_main.c(32,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\client\cl_main.c(33,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\client\cl_main.c(34,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\client\cl_main.c(35,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\client\cl_main.c(36,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\client\cl_main.c(37,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\client\cl_main.c(38,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\client\cl_main.c(39,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\client\cl_main.c(40,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\client\cl_main.c(2003,3): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_main.c(2047,4): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  cl_netgraph.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  cl_parse.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\cl_parse.c(2022,32): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_parse.c(2039,78): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_parse.c(2081,78): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_parse.c(2116,79): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_parse.c(2129,78): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_parse.c(2136,78): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_parse.c(2143,82): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_parse.c(2194,53): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_parse.c(2195,92): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_parse.c(2199,53): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_parse.c(2200,92): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_parse.c(2250,76): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_parse.c(1981,17): warning C4101: 'byParam2': unreferenced local variable
+D:\XashFE\dev\src\engine\client\cl_parse.c(1982,18): warning C4101: 'flParam2': unreferenced local variable
+  cl_pmove.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  cl_qparse.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\cl_qparse.c(947,32): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_qparse.c(971,78): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_qparse.c(1011,79): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_qparse.c(1016,78): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+D:\XashFE\dev\src\engine\client\cl_qparse.c(1041,82): warning C4267: '+=': conversion from 'size_t' to 'word', possible loss of data
+  cl_remap.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\cl_remap.c(81,27): warning C4311: 'type cast': pointer truncation from 'texture_t *' to 'int'
+D:\XashFE\dev\src\engine\client\cl_remap.c(128,48): warning C4133: 'function': incompatible types - from 'int *' to 'size_t *'
+D:\XashFE\dev\src\engine\client\cl_remap.c(178,48): warning C4133: 'function': incompatible types - from 'int *' to 'size_t *'
+  cl_scrn.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\cl_scrn.c(534,41): warning C4133: 'function': incompatible types - from 'size_t *' to 'long *'
+  cl_tent.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  cl_video.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  cl_view.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_alias.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_backend.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+D:\XashFE\dev\src\engine\client\cl_gameui.c(706): warning C4789: buffer 'rvp' of size 8 bytes will be overrun; 4 bytes will be written starting at offset 52
+  Compiling...
+  gl_beams.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_cull.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_decals.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_downsample.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_draw.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_frustum.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_image.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\gl_image.c(1033,92): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+D:\XashFE\dev\src\engine\client\gl_image.c(1034,79): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+D:\XashFE\dev\src\engine\client\gl_image.c(1038,109): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+D:\XashFE\dev\src\engine\client\gl_image.c(1039,93): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+D:\XashFE\dev\src\engine\client\gl_image.c(1043,113): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+D:\XashFE\dev\src\engine\client\gl_image.c(1044,94): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+D:\XashFE\dev\src\engine\client\gl_image.c(1048,103): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+D:\XashFE\dev\src\engine\client\gl_image.c(1049,87): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+D:\XashFE\dev\src\engine\client\gl_image.c(1116,27): warning C4267: '=': conversion from 'size_t' to 'uint', possible loss of data
+D:\XashFE\dev\src\engine\client\gl_image.c(1419,32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\client\gl_image.c(1987,17): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+  gl_mirror.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\gl_mirror.c(160,26): warning C4002: too many arguments for function-like macro invocation 'GL_LoadTextureInternal'
+  gl_refrag.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_rlight.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_rmain.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\gl_rmain.c(1404,50): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\client\gl_rmain.c(1510,1): warning C4028: formal parameter 5 different from declaration
+D:\XashFE\dev\src\engine\client\gl_rmain.c(1510,1): warning C4028: formal parameter 6 different from declaration
+D:\XashFE\dev\src\engine\client\gl_rmain.c(1510,1): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(movie_state_t *,long *,long *,float *)' to 'int (__cdecl *)(void *,long *,long *,float *)'
+D:\XashFE\dev\src\engine\client\gl_rmain.c(1510,1): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(movie_state_t *)' to 'int (__cdecl *)(void *)'
+D:\XashFE\dev\src\engine\client\gl_rmain.c(1510,1): warning C4028: formal parameter 3 different from declaration
+  gl_rmath.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_rmisc.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_rpart.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_rsurf.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\gl_rsurf.c(2062,61): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\client\gl_rsurf.c(2063,75): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  gl_sprite.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_studio.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\gl_studio.c(30,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\client\gl_studio.c(31,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\client\gl_studio.c(757,41): warning C4133: 'function': incompatible types - from 'size_t *' to 'long *'
+D:\XashFE\dev\src\engine\client\gl_studio.c(3856,40): warning C4311: 'type cast': pointer truncation from 'byte *' to 'int'
+  gl_vidnt.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  gl_warp.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  s_backend.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+  Compiling...
+  s_dsp.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  s_load.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\s_load.c(53,19): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+  s_main.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\s_main.c(1571,69): warning C4267: 'function': conversion from 'size_t' to 'uint', possible loss of data
+D:\XashFE\dev\src\engine\client\s_main.c(1635,35): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\client\s_main.c(1663,71): warning C4267: 'function': conversion from 'size_t' to 'uint', possible loss of data
+D:\XashFE\dev\src\engine\client\s_main.c(1996,75): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  s_mix.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  s_mouth.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  s_stream.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\client\s_stream.c(210,35): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\client\s_stream.c(313,35): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  s_utils.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  s_vox.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  vgui_draw.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  avikit.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  build.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  cfgscript.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  cmd.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\cmd.c(912,21): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+  common.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\common.c(213,42): warning C4311: 'type cast': pointer truncation from 'const byte *' to 'uint'
+  console.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\console.c(605,42): warning C4133: 'function': incompatible types - from 'size_t *' to 'long *'
+  con_utils.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\con_utils.c(869,39): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  crclib.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\crclib.c(141,20): warning C4311: 'type cast': pointer truncation from 'byte *' to 'uint'
+  crtlib.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\crtlib.c(476,11): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\XashFE\dev\src\engine\common\crtlib.c(581,9): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\crtlib.c(566,12): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  custom.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  cvar.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\cvar.c(435,6): warning C4311: 'type cast': pointer truncation from 'convar_s *' to 'uint'
+D:\XashFE\dev\src\engine\common\cvar.c(473,6): warning C4311: 'type cast': pointer truncation from 'convar_s *' to 'uint'
+  Generating Code...
+  Compiling...
+  filesystem.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\filesystem.c(74,2): warning C4091: 'typedef ': ignored on left of 'file_s' when no variable is declared
+D:\XashFE\dev\src\engine\common\filesystem.c(85,2): warning C4091: 'typedef ': ignored on left of 'wfile_s' when no variable is declared
+D:\XashFE\dev\src\engine\common\filesystem.c(412,15): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _open. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(421,2): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(427,3): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(435,3): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(445,3): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(453,3): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(458,2): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(460,23): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(464,3): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1541,17): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _open. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1549,22): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1553,7): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1573,6): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1576,15): warning C4996: 'dup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _dup. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1602,14): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _open. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1605,2): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1731,34): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1863,6): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1885,3): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1891,11): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1892,19): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1951,3): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1952,8): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1966,3): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(1967,8): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(2043,8): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(2155,6): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+D:\XashFE\dev\src\engine\common\filesystem.c(2957,25): warning C4267: 'function': conversion from 'size_t' to 'long', possible loss of data
+D:\XashFE\dev\src\engine\common\filesystem.c(2967,25): warning C4267: 'function': conversion from 'size_t' to 'long', possible loss of data
+D:\XashFE\dev\src\engine\common\filesystem.c(2973,24): warning C4267: 'function': conversion from 'size_t' to 'long', possible loss of data
+  gamma.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  host.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\host.c(32,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\common\host.c(33,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\common\host.c(228,32): warning C4133: 'function': incompatible types - from 'size_t *' to 'long *'
+  host_state.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  hpak.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\hpak.c(655,17): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  img_bmp.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\imagelib\img_bmp.c(108,61): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+  img_dds.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\imagelib\img_dds.c(225,9): warning C4267: 'return': conversion from 'size_t' to 'uint', possible loss of data
+D:\XashFE\dev\src\engine\common\imagelib\img_dds.c(233,44): warning C4267: '=': conversion from 'size_t' to 'uint', possible loss of data
+  img_main.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\imagelib\img_main.c(198,20): warning C4267: '+=': conversion from 'size_t' to 'uint', possible loss of data
+D:\XashFE\dev\src\engine\common\imagelib\img_main.c(303,23): warning C4267: '+=': conversion from 'size_t' to 'uint', possible loss of data
+  img_quant.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\imagelib\img_quant.c(445,27): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  img_tga.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  img_utils.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  img_wad.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\imagelib\img_wad.c(150,26): warning C4312: 'type cast': conversion from 'int' to 'byte *' of greater size
+  infostring.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  input.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  keys.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  library.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\library.c(71,41): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(71,93): warning C4312: 'type cast': conversion from 'unsigned long' to 'byte *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(72,48): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(80,39): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(80,91): warning C4312: 'type cast': conversion from 'unsigned long' to 'byte *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(81,25): warning C4311: 'type cast': pointer truncation from 'const byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(81,75): warning C4312: 'type cast': conversion from 'unsigned long' to 'byte *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(82,46): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(99,25): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(99,79): warning C4312: 'type cast': conversion from 'unsigned long' to 'byte *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(105,23): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(105,77): warning C4312: 'type cast': conversion from 'unsigned long' to 'byte *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(126,53): warning C4312: 'type cast': conversion from 'DWORD' to 'LPVOID' of greater size
+D:\XashFE\dev\src\engine\common\library.c(149,61): warning C4312: 'type cast': conversion from 'DWORD' to 'LPVOID' of greater size
+D:\XashFE\dev\src\engine\common\library.c(163,63): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(163,119): warning C4312: 'type cast': conversion from 'unsigned long' to 'PIMAGE_BASE_RELOCATION' of greater size
+D:\XashFE\dev\src\engine\common\library.c(166,25): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(166,82): warning C4312: 'type cast': conversion from 'unsigned long' to 'byte *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(186,29): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(186,62): warning C4312: 'type cast': conversion from 'DWORD' to 'DWORD *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(196,41): warning C4311: 'type cast': pointer truncation from 'PIMAGE_BASE_RELOCATION' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(196,97): warning C4312: 'type cast': conversion from 'unsigned long' to 'PIMAGE_BASE_RELOCATION' of greater size
+D:\XashFE\dev\src\engine\common\library.c(216,37): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(216,93): warning C4312: 'type cast': conversion from 'unsigned long' to 'PIMAGE_EXPORT_DIRECTORY' of greater size
+D:\XashFE\dev\src\engine\common\library.c(225,21): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(225,75): warning C4312: 'type cast': conversion from 'unsigned long' to 'DWORD *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(226,20): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(226,81): warning C4312: 'type cast': conversion from 'unsigned long' to 'WORD *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(231,8): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(231,8): warning C4312: 'type cast': conversion from 'unsigned long' to 'const char *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(251,18): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(251,18): warning C4312: 'type cast': conversion from 'unsigned long' to 'DWORD *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(251,127): warning C4312: 'type cast': conversion from 'unsigned long' to 'FARPROC' of greater size
+D:\XashFE\dev\src\engine\common\library.c(262,67): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(262,123): warning C4312: 'type cast': conversion from 'unsigned long' to 'PIMAGE_IMPORT_DESCRIPTOR' of greater size
+D:\XashFE\dev\src\engine\common\library.c(270,22): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(270,69): warning C4312: 'type cast': conversion from 'unsigned long' to 'LPCSTR' of greater size
+D:\XashFE\dev\src\engine\common\library.c(285,25): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(285,86): warning C4312: 'type cast': conversion from 'unsigned long' to 'DWORD *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(286,24): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(286,77): warning C4312: 'type cast': conversion from 'unsigned long' to 'DWORD *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(291,25): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(291,78): warning C4312: 'type cast': conversion from 'unsigned long' to 'DWORD *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(292,24): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(292,77): warning C4312: 'type cast': conversion from 'unsigned long' to 'DWORD *' of greater size
+D:\XashFE\dev\src\engine\common\library.c(301,51): warning C4312: 'type cast': conversion from 'DWORD' to 'LPCSTR' of greater size
+D:\XashFE\dev\src\engine\common\library.c(302,62): warning C4311: 'type cast': pointer truncation from 'void *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(306,63): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(306,103): warning C4312: 'type cast': conversion from 'unsigned long' to 'PIMAGE_IMPORT_BY_NAME' of greater size
+D:\XashFE\dev\src\engine\common\library.c(308,62): warning C4311: 'type cast': pointer truncation from 'void *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(335,42): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(335,132): warning C4312: 'type cast': conversion from 'unsigned long' to 'DllEntryProc' of greater size
+D:\XashFE\dev\src\engine\common\library.c(430,57): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(436,70): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(453,28): warning C4311: 'type cast': pointer truncation from 'byte *' to 'DWORD'
+D:\XashFE\dev\src\engine\common\library.c(453,106): warning C4312: 'type cast': conversion from 'unsigned long' to 'DllEntryProc' of greater size
+D:\XashFE\dev\src\engine\common\library.c(747,41): warning C4311: 'type cast': pointer truncation from 'void *' to 'dword'
+  mathlib.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\mathlib.c(312,2): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\XashFE\dev\src\engine\common\mathlib.c(314,7): error C2065: 'fld': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(314,7): error C2146: syntax error: missing ';' before identifier 'dword'
+D:\XashFE\dev\src\engine\common\mathlib.c(314,13): error C2275: 'dword': illegal use of this type as an expression
+D:\XashFE\dev\src\engine\common\common.h(82): message : see declaration of 'dword'
+D:\XashFE\dev\src\engine\common\mathlib.c(314,13): error C2146: syntax error: missing ';' before identifier 'ptr'
+D:\XashFE\dev\src\engine\common\mathlib.c(314,17): error C2065: 'ptr': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(314,25): error C2109: subscript requires array or pointer type
+D:\XashFE\dev\src\engine\common\mathlib.c(315,3): error C2146: syntax error: missing ';' before identifier 'fsincos'
+D:\XashFE\dev\src\engine\common\mathlib.c(317,3): error C2065: 'fsincos': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(317,3): error C2146: syntax error: missing ';' before identifier 'mov'
+D:\XashFE\dev\src\engine\common\mathlib.c(317,7): error C2065: 'mov': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(317,7): error C2146: syntax error: missing ';' before identifier 'edx'
+D:\XashFE\dev\src\engine\common\mathlib.c(317,10): error C2065: 'edx': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(317,18): error C2275: 'dword': illegal use of this type as an expression
+D:\XashFE\dev\src\engine\common\common.h(82): message : see declaration of 'dword'
+D:\XashFE\dev\src\engine\common\mathlib.c(317,18): error C2146: syntax error: missing ';' before identifier 'ptr'
+D:\XashFE\dev\src\engine\common\mathlib.c(317,22): error C2065: 'ptr': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(318,3): error C2146: syntax error: missing ';' before identifier 'mov'
+D:\XashFE\dev\src\engine\common\mathlib.c(318,7): error C2065: 'mov': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(318,7): error C2146: syntax error: missing ';' before identifier 'eax'
+D:\XashFE\dev\src\engine\common\mathlib.c(318,10): error C2065: 'eax': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(318,18): error C2275: 'dword': illegal use of this type as an expression
+D:\XashFE\dev\src\engine\common\common.h(82): message : see declaration of 'dword'
+D:\XashFE\dev\src\engine\common\mathlib.c(318,18): error C2146: syntax error: missing ';' before identifier 'ptr'
+D:\XashFE\dev\src\engine\common\mathlib.c(318,22): error C2065: 'ptr': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(320,3): error C2146: syntax error: missing ';' before identifier 'fstp'
+D:\XashFE\dev\src\engine\common\mathlib.c(320,8): error C2065: 'fstp': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(320,8): error C2146: syntax error: missing ';' before identifier 'dword'
+D:\XashFE\dev\src\engine\common\mathlib.c(320,14): error C2275: 'dword': illegal use of this type as an expression
+D:\XashFE\dev\src\engine\common\common.h(82): message : see declaration of 'dword'
+D:\XashFE\dev\src\engine\common\mathlib.c(320,14): error C2146: syntax error: missing ';' before identifier 'ptr'
+D:\XashFE\dev\src\engine\common\mathlib.c(320,18): error C2065: 'ptr': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(320,22): error C2065: 'edx': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(320,22): error C2109: subscript requires array or pointer type
+D:\XashFE\dev\src\engine\common\mathlib.c(321,3): error C2146: syntax error: missing ';' before identifier 'fstp'
+D:\XashFE\dev\src\engine\common\mathlib.c(321,8): error C2065: 'fstp': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(321,8): error C2146: syntax error: missing ';' before identifier 'dword'
+D:\XashFE\dev\src\engine\common\mathlib.c(321,14): error C2275: 'dword': illegal use of this type as an expression
+D:\XashFE\dev\src\engine\common\common.h(82): message : see declaration of 'dword'
+D:\XashFE\dev\src\engine\common\mathlib.c(321,14): error C2146: syntax error: missing ';' before identifier 'ptr'
+D:\XashFE\dev\src\engine\common\mathlib.c(321,18): error C2065: 'ptr': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(321,22): error C2065: 'eax': undeclared identifier
+D:\XashFE\dev\src\engine\common\mathlib.c(321,22): error C2109: subscript requires array or pointer type
+D:\XashFE\dev\src\engine\common\mathlib.c(322,2): error C2143: syntax error: missing ';' before '}'
+  matrixlib.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  model.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\model.c(535,35): warning C4133: 'function': incompatible types - from 'size_t *' to 'long *'
+  mod_bmodel.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(194,1): warning C4133: 'initializing': incompatible types - from 'int *' to 'size_t *'
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(195,1): warning C4133: 'initializing': incompatible types - from 'int *' to 'size_t *'
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(428,54): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(428,67): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(429,59): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(429,72): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(429,88): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(543,56): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(576,74): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(593,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(850,56): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(1266,38): warning C4133: 'function': incompatible types - from 'size_t *' to 'long *'
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(1321,40): warning C4133: 'function': incompatible types - from 'size_t *' to 'long *'
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(1469,32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(1600,23): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(1641,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(1675,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(1709,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(1742,32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(1756,35): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(1867,24): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(1958,43): warning C4133: 'function': incompatible types - from 'size_t *' to 'long *'
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(2099,30): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(2135,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_bmodel.c(2289,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  Compiling...
+  mod_dbghulls.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\mod_dbghulls.c(70,66): warning C4311: 'type cast': pointer truncation from 'vec3_t' to 'int'
+D:\XashFE\dev\src\engine\common\mod_dbghulls.c(87,58): warning C4311: 'type cast': pointer truncation from 'vec3_t' to 'int'
+D:\XashFE\dev\src\engine\common\mod_dbghulls.c(114,58): warning C4311: 'type cast': pointer truncation from 'vec3_t' to 'int'
+D:\XashFE\dev\src\engine\common\mod_dbghulls.c(736,28): warning C4311: 'type cast': pointer truncation from 'winding_t *' to 'unsigned long'
+D:\XashFE\dev\src\engine\common\mod_dbghulls.c(769,28): warning C4311: 'type cast': pointer truncation from 'winding_t *' to 'unsigned long'
+  mod_studio.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\mod_studio.c(838,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\mod_studio.c(843,26): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+  net_buffer.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\net_buffer.c(65,2): warning C4311: 'type cast': pointer truncation from 'void *' to 'dword'
+D:\XashFE\dev\src\engine\common\net_buffer.c(271,23): warning C4311: 'type cast': pointer truncation from 'byte *' to 'dword'
+D:\XashFE\dev\src\engine\common\net_buffer.c(426,28): warning C4047: 'function': 'int' differs in levels of indirection from 'float *'
+D:\XashFE\dev\src\engine\common\net_buffer.c(426,24): warning C4024: 'MSG_WriteSBitLong': different types for formal and actual parameter 2
+D:\XashFE\dev\src\engine\common\net_buffer.c(540,23): warning C4311: 'type cast': pointer truncation from 'byte *' to 'dword'
+  net_chan.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  net_encode.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\net_encode.c(38,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(39,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(40,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(49,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(50,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(51,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(95,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(96,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(97,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(98,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(99,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(100,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(101,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(102,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(103,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(111,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(112,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(113,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(114,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(115,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(116,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(156,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(157,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(158,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(159,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(160,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(161,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(163,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(164,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(165,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(169,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(170,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(171,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(227,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(228,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(229,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(230,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(231,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(232,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(233,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(234,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(235,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(236,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(237,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(238,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(245,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(246,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(247,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(248,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(249,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(250,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(279,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(280,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(281,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(282,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(283,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(284,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(285,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(286,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(287,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(288,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(289,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(290,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(291,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(292,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(293,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(294,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(295,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(324,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(325,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(326,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(338,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(339,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(340,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(341,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(342,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(343,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(354,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(355,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(356,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(357,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(358,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(359,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(360,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(361,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(362,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(363,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(364,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_encode.c(365,3): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+  net_ws.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\net_ws.c(549,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_ws.c(639,17): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\net_ws.c(888,44): warning C4133: 'function': incompatible types - from 'size_t *' to 'int *'
+D:\XashFE\dev\src\engine\common\net_ws.c(1045,46): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  pm_debug.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  pm_surface.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  pm_trace.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  snd_main.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\soundlib\soundlib.h(80,2): warning C4091: 'typedef ': ignored on left of 'stream_s' when no variable is declared
+  snd_mp3.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\soundlib\soundlib.h(80,2): warning C4091: 'typedef ': ignored on left of 'stream_s' when no variable is declared
+D:\XashFE\dev\src\engine\common\soundlib\snd_mp3.c(78,51): warning C4267: 'function': conversion from 'size_t' to 'long', possible loss of data
+D:\XashFE\dev\src\engine\common\soundlib\snd_mp3.c(121,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\soundlib\snd_mp3.c(130,24): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\soundlib\snd_mp3.c(131,15): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\soundlib\snd_mp3.c(137,29): warning C4267: '=': conversion from 'size_t' to 'uint', possible loss of data
+D:\XashFE\dev\src\engine\common\soundlib\snd_mp3.c(230,24): warning C4267: '=': conversion from 'size_t' to 'long', possible loss of data
+  snd_utils.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\soundlib\soundlib.h(80,2): warning C4091: 'typedef ': ignored on left of 'stream_s' when no variable is declared
+  snd_wav.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\soundlib\soundlib.h(80,2): warning C4091: 'typedef ': ignored on left of 'stream_s' when no variable is declared
+D:\XashFE\dev\src\engine\common\soundlib\snd_wav.c(412,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\common\soundlib\snd_wav.c(450,15): warning C4267: 'return': conversion from 'size_t' to 'long', possible loss of data
+  sys_con.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\common\sys_con.c(149,40): warning C4311: 'type cast': pointer truncation from 'HBRUSH' to 'long'
+D:\XashFE\dev\src\engine\common\sys_con.c(359,87): error C2065: 'GWL_WNDPROC': undeclared identifier
+D:\XashFE\dev\src\engine\common\sys_con.c(359,113): warning C4311: 'type cast': pointer truncation from 'long (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' to 'long'
+D:\XashFE\dev\src\engine\common\sys_con.c(359,114): warning C4312: 'type cast': conversion from 'LONG' to 'WNDPROC' of greater size
+D:\XashFE\dev\src\engine\common\sys_con.c(488,19): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  sys_win.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  titles.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  world.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  zone.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  sv_client.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\server\sv_client.c(2044,26): warning C4267: 'function': conversion from 'size_t' to 'long', possible loss of data
+  sv_cmds.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+  Compiling...
+  sv_custom.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  sv_frame.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  sv_game.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\server\sv_game.c(363,51): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\server\sv_game.c(3836,53): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\server\sv_game.c(3961,52): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\server\sv_game.c(3967,48): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\server\sv_game.c(4011,52): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\server\sv_game.c(4016,48): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  sv_init.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  sv_log.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\server\sv_log.c(42,10): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\XashFE\dev\src\engine\server\sv_log.c(109,10): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  sv_main.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\server\sv_main.c(23,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(24,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(25,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(26,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(27,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(28,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(29,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(30,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(31,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(32,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(33,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(34,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(35,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(36,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(37,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(38,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(39,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(40,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(41,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(42,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(43,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(44,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(45,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(46,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(47,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(48,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(49,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(50,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(51,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(52,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(53,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(54,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(55,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(56,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(59,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(60,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(61,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(62,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(63,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(64,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(65,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(66,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(67,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(70,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(71,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(72,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(73,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(74,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(75,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(76,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(77,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(78,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(79,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(80,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(81,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(82,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(83,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(84,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(85,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(86,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(87,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(88,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(89,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(90,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(91,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(92,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(93,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(94,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(95,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(96,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(97,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(98,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(99,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(100,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(101,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(102,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(103,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(104,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(105,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(106,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(109,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(110,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(111,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(112,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\XashFE\dev\src\engine\server\sv_main.c(352,3): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\XashFE\dev\src\engine\server\sv_main.c(419,6): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  sv_move.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  sv_phys.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\server\sv_phys.c(2011,1): warning C4133: 'initializing': incompatible types - from 'qboolean (__cdecl *)(const vec_t *,const vec_t *,const vec_t *)' to 'int (__cdecl *)(const float *,const float *,const float *)'
+  sv_pmove.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\server\sv_pmove.c(222,11): warning C4311: 'type cast': pointer truncation from 'link_t *' to 'int'
+D:\XashFE\dev\src\engine\server\sv_pmove.c(311,11): warning C4311: 'type cast': pointer truncation from 'link_t *' to 'int'
+  sv_save.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\server\sv_save.c(2352,13): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  sv_world.c
+D:\XashFE\dev\src\common\const.h(18,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\XashFE\dev\src\engine\server\sv_world.c(515,11): warning C4311: 'type cast': pointer truncation from 'link_t *' to 'int'
+D:\XashFE\dev\src\engine\server\sv_world.c(719,11): warning C4311: 'type cast': pointer truncation from 'link_t *' to 'int'
+D:\XashFE\dev\src\engine\server\sv_world.c(1254,11): warning C4311: 'type cast': pointer truncation from 'link_t *' to 'int'
+D:\XashFE\dev\src\engine\server\sv_world.c(1286,11): warning C4311: 'type cast': pointer truncation from 'link_t *' to 'int'
+D:\XashFE\dev\src\engine\server\sv_world.c(1318,11): warning C4311: 'type cast': pointer truncation from 'link_t *' to 'int'
+  Generating Code...
