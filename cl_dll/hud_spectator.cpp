@@ -903,7 +903,7 @@ bool CHudSpectator::ParseOverviewFile( )
 
 	memset( &m_OverviewData, 0, sizeof(m_OverviewData));
 
-	// fill in standrd values
+	// fill in standard values
 	m_OverviewData.insetWindowX = 4;	// upper left corner
 	m_OverviewData.insetWindowY = 4;
 	m_OverviewData.insetWindowHeight = 180;

@@ -1089,6 +1089,8 @@ void R_RenderBrushPoly( msurface_t *fa, int cull_type )
 	if( FBitSet( fa->flags, SURF_DRAWTURB ))
 	{	
 		// warp texture, no lightmaps
+		R_UploadRipples(t);
+
 		EmitWaterPolys( fa, (cull_type == CULL_BACKSIDE));
 		if (is_mirror) R_EndDrawMirror();
 		return;
@@ -1365,6 +1367,9 @@ void R_DrawWaterSurfaces( void )
 
 		if( !FBitSet( s->flags, SURF_DRAWTURB ))
 			continue;
+
+		// set modulate mode explicitly
+		R_UploadRipples(t);
 
 		// set modulate mode explicitly
 		GL_Bind( GL_TEXTURE0, t->gl_texturenum );

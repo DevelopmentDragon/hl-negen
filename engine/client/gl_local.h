@@ -474,6 +474,11 @@ void R_ClearSkyBox( void );
 void R_DrawSkyBox( void );
 void R_DrawClouds( void );
 void EmitWaterPolys( msurface_t *warp, qboolean reverse );
+void R_InitRipples(void);
+void R_ResetRipples(void);
+void R_AnimateRipples(void);
+void R_UpdateRippleTexParams(void);
+void R_UploadRipples(texture_t* image);
 
 //
 // gl_vidnt.c
@@ -709,6 +714,10 @@ extern convar_t	*r_lockfrustum;
 extern convar_t	*r_traceglow;
 extern convar_t	*r_dynamic;
 extern convar_t	*r_lightmap;
+
+extern convar_t *r_ripple;
+extern convar_t *r_ripple_updatetime;
+extern convar_t *r_ripple_spawntime;
 
 extern convar_t	*vid_displayfrequency;
 extern convar_t	*vid_fullscreen;

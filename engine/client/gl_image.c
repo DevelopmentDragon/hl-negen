@@ -320,6 +320,8 @@ void R_SetTextureParameters( void )
 	// change all the existing mipmapped texture objects
 	for( i = 0; i < gl_numTextures; i++ )
 		GL_UpdateTextureParams( i );
+
+	R_UpdateRippleTexParams();
 }
 
 /*
@@ -1319,20 +1321,24 @@ static gl_texture_t *GL_AllocTexture( const char *name, texFlags_t flags )
 	for( i = 0, tex = gl_textures; i < gl_numTextures; i++, tex++ )
 		if( !tex->name[0] ) break;
 
-	if( i == gl_numTextures )
+	if (i == gl_numTextures)
 	{
-		if( gl_numTextures == MAX_TEXTURES )
-			Host_Error( "GL_AllocTexture: MAX_TEXTURES limit exceeds\n" );
+		if (gl_numTextures == MAX_TEXTURES)
+			Host_Error("GL_AllocTexture: MAX_TEXTURES limit exceeds\n");
 		gl_numTextures++;
 	}
 
 	tex = &gl_textures[i];
 
 	// copy initial params
-	Q_strncpy( tex->name, name, sizeof( tex->name ));
-	if( FBitSet( flags, TF_SKYSIDE ))
+	Q_strncpy(tex->name, name, sizeof(tex->name));
+
+	if (FBitSet(flags, TF_SKYSIDE))
 		tex->texnum = tr.skyboxbasenum++;
-	else tex->texnum = i; // texnum is used for fast acess into gl_textures array too
+
+	//else tex->texnum = i; // texnum is used for fast acess into gl_textures array too
+	else pglGenTextures(1, &tex->texnum ); // FWGS fix
+
 	tex->flags = flags;
 
 	// add to hash table
@@ -2196,6 +2202,7 @@ void R_InitImages( void )
 	// validate cvars
 	R_SetTextureParameters();
 	GL_CreateInternalTextures();
+	R_InitRipples();
 
 	Cmd_AddCommand( "texturelist", R_TextureList_f, "display loaded textures list" );
 }

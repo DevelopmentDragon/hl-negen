@@ -71,6 +71,10 @@ convar_t	*r_traceglow;
 convar_t	*r_dynamic;
 convar_t	*r_lightmap;
 
+convar_t	*r_ripple;
+convar_t	*r_ripple_updatetime;
+convar_t	*r_ripple_spawntime;
+
 convar_t	*vid_displayfrequency;
 convar_t	*vid_fullscreen;
 convar_t	*vid_brightness;
@@ -1637,6 +1641,10 @@ void GL_InitCommands( void )
 	vid_mode = Cvar_Get( "vid_mode", VID_AUTOMODE, FCVAR_RENDERINFO|FCVAR_VIDRESTART, "display resolution mode" );
 	vid_fullscreen = Cvar_Get( "fullscreen", "0", FCVAR_RENDERINFO|FCVAR_VIDRESTART, "enable fullscreen mode" );
 	vid_displayfrequency = Cvar_Get ( "vid_displayfrequency", "0", FCVAR_RENDERINFO|FCVAR_VIDRESTART, "fullscreen refresh rate" );
+
+	r_ripple = Cvar_Get("r_ripple", "1", FCVAR_GLCONFIG, "enable software-like water texture ripple simulation");
+	r_ripple_updatetime = Cvar_Get("r_ripple_updatetime", "0.05", FCVAR_GLCONFIG, "how fast ripple simulation is");
+	r_ripple_spawntime = Cvar_Get("r_ripple_spawntime", "0.1", FCVAR_GLCONFIG, "how fast new ripples spawn");
 
 	// FarEast: Downsampling implementation, thanks to Magic Nipples
 	r_downsample = Cvar_Get("r_scale", "0", FCVAR_ARCHIVE, "downscale the view 1 - 1/2, 2 - 1/4, etc...");

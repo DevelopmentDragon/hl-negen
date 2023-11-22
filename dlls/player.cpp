@@ -1036,15 +1036,47 @@ WaterMove
 
 void CBasePlayer::WaterMove()
 {
+	switch (pev->waterlevel)
+	{
+
+	};
+
 	int air;
 
-	if (pev->movetype == MOVETYPE_NOCLIP)
+	// If we're noclipping or dead, do not go through this function
+	if (pev->movetype == MOVETYPE_NOCLIP || !IsAlive())
 		return;
 
-	if (pev->health < 0)
-		return;
+	// FarEast: Reimplemented
+	//if (!pev->waterlevel)
+	//{
 
-	// Scrapped for now until further notice
+		if (pev->waterlevel > 3)
+		{
+			ALERT(at_console, "Go away, I'm swimming!\n");
+			// leave the water.
+			switch (RANDOM_LONG(0, 3))
+			{
+			case 0:
+				EMIT_SOUND(ENT(pev), CHAN_BODY, "player/pl_wade1.wav", 1.0f, ATTN_NORM);
+				break;
+			case 1:
+				EMIT_SOUND(ENT(pev), CHAN_BODY, "player/pl_wade2.wav", 1.0f, ATTN_NORM);
+				break;
+			case 2:
+				EMIT_SOUND(ENT(pev), CHAN_BODY, "player/pl_wade3.wav", 1.0f, ATTN_NORM);
+				break;
+			case 3:
+				EMIT_SOUND(ENT(pev), CHAN_BODY, "player/pl_wade4.wav", 1.0f, ATTN_NORM);
+				break;
+			}
+
+			pev->flags = pev->flags & ~FL_INWATER;
+		}
+
+		//return;
+	//}
+
 }
 
 
@@ -2417,7 +2449,6 @@ void CBasePlayer::Spawn( void )
 	pev->movetype		= MOVETYPE_WALK;
 	pev->flags		   &= FL_PROXY;	// keep proxy flag sey by engine
 	pev->flags		   |= FL_CLIENT;
-	pev->air_finished	= gpGlobals->time + 12;
 	pev->dmg			= 2;				// initial water damage
 	pev->effects		= 0;
 	pev->deadflag		= DEAD_NO;

@@ -550,7 +550,7 @@ void V_CalcNormalRefdef ( struct ref_params_s *pparams )
 	// -- this prevents drawing errors in GL due to waves
 
 	waterOffset = 0;
-	if ( pparams->waterlevel >= 2 )
+	if ( pparams->waterlevel >= 2 || pparams->waterlevel < 0)
 	{
 		int		i, contents, waterDist, waterEntity;
 		vec3_t	point;

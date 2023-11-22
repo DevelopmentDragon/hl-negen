@@ -198,7 +198,6 @@ typedef struct entvars_s
 	string_t		noise3;
 
 	float		speed;
-	float		air_finished;
 	float		pain_finished;
 	float		radsuit_finished;
 

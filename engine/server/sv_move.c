@@ -112,7 +112,6 @@ void SV_WaterMove( edict_t *ent )
 
 	if( ent->v.movetype == MOVETYPE_NOCLIP )
 	{
-		ent->v.air_finished = sv.time + 12.0f;
 		return;
 	}
 
@@ -125,26 +124,7 @@ void SV_WaterMove( edict_t *ent )
 	watertype = ent->v.watertype;
 	flags = ent->v.flags;
 
-	if( !( flags & ( FL_IMMUNE_WATER|FL_GODMODE )))
-	{
-		if((( flags & FL_SWIM ) && waterlevel > drownlevel ) || waterlevel <= drownlevel )
-		{
-			if( ent->v.air_finished > sv.time && ent->v.pain_finished > sv.time )
-			{
-				ent->v.dmg += 2;
-
-				if( ent->v.dmg < 15 )
-					ent->v.dmg = 10; // quake1 original code
-				ent->v.pain_finished = sv.time + 1.0f;
-			}
-		}
-		else
-		{
-			ent->v.air_finished = sv.time + 12.0f;
-			ent->v.dmg = 2;
-		}
-	}
-
+	/*
 	if( !waterlevel )
 	{
 		if( flags & FL_INWATER )
@@ -169,9 +149,9 @@ void SV_WaterMove( edict_t *ent )
 			ent->v.flags = flags & ~FL_INWATER;
 		}
 
-		ent->v.air_finished = sv.time + 12.0f;
 		return;
 	}
+	*/
 
 	if( watertype == CONTENTS_LAVA )
 	{

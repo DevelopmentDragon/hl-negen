@@ -205,19 +205,20 @@ CL_UpdateLatchedVars
 */
 void CL_UpdateLatchedVars( cl_entity_t *ent )
 {
-	if( !ent->model || ( ent->model->type != mod_alias && ent->model->type != mod_studio ))
+	if ( !ent->model || ( ent->model->type != mod_alias && ent->model->type != mod_studio ))
 		return; // below fields used only for alias and studio interpolation
 
 	VectorCopy( ent->prevstate.origin, ent->latched.prevorigin );
 	VectorCopy( ent->prevstate.angles, ent->latched.prevangles );
 
-	if( ent->model->type == mod_alias )
+	if ( ent->model->type == mod_alias )
 		ent->latched.prevframe = ent->prevstate.frame;
 	ent->latched.prevanimtime = ent->prevstate.animtime;
 
-	if( ent->curstate.sequence != ent->prevstate.sequence )
+	if ( ent->curstate.sequence != ent->prevstate.sequence )
 	{
-		memcpy( ent->prevstate.blending, ent->latched.prevseqblending, sizeof( ent->prevstate.blending ));
+		//memcpy( ent->prevstate.blending, ent->latched.prevseqblending, sizeof( ent->prevstate.blending ));
+		memcpy(ent->latched.prevseqblending, ent->prevstate.blending, sizeof(ent->prevstate.blending)); // Thanks friend
 		ent->latched.prevsequence = ent->prevstate.sequence;
 		ent->latched.sequencetime = ent->curstate.animtime;
 	}

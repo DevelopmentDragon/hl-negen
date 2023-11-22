@@ -501,6 +501,7 @@
     <ClCompile Include="nihilanth.cpp" />
     <ClCompile Include="nodes.cpp" />
     <ClCompile Include="osprey.cpp" />
+    <ClCompile Include="oxygen.cpp" />
     <ClCompile Include="pathcorner.cpp" />
     <ClCompile Include="plane.cpp" />
     <ClCompile Include="plats.cpp" />

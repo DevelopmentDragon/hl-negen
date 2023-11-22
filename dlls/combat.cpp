@@ -1060,6 +1060,7 @@ void RadiusDamage( Vector vecSrc, entvars_t *pevInflictor, entvars_t *pevAttacke
 				continue;
 			}
 
+			// SUBJECT TO CHANGE
 			// blast's don't tavel into or out of water
 			if (bInWater && pEntity->pev->waterlevel == 0)
 				continue;

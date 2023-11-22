@@ -1779,6 +1779,20 @@ static void Mod_LoadMarkSurfaces( dbspmodel_t *bmod )
 	}
 }
 
+static qboolean Mod_LooksLikeWaterTexture(const char* name)
+{
+	if ((name[0] == '*' && Q_stricmp(name, "*default")) || name[0] == '!')
+		return true;
+
+	if (!CL_IsQuakeCompatible())
+	{
+		if (!Q_strncmp(name, "water", 5) || !Q_strnicmp(name, "laser", 5))
+			return true;
+	}
+
+	return false;
+}
+
 /*
 =================
 Mod_LoadTextures
@@ -1824,6 +1838,8 @@ static void Mod_LoadTextures( dbspmodel_t *bmod )
 
 	for( i = 0; i < loadmodel->numtextures; i++ )
 	{
+		int	txFlags = 0;
+
 		if( in->dataofs[i] == -1 )
 		{
 			// create default texture (some mods requires this)
@@ -1850,6 +1866,10 @@ static void Mod_LoadTextures( dbspmodel_t *bmod )
 
 		tx->width = mt->width;
 		tx->height = mt->height;
+
+		// check if this is water to keep the source texture and expand it to RGBA (so ripple effect works)
+		if (Mod_LooksLikeWaterTexture(mt->name))
+			SetBits(txFlags, TF_KEEP_SOURCE | TF_EXPAND_SOURCE);
 
 		if( mt->offsets[0] > 0 )
 		{
@@ -1898,7 +1918,7 @@ static void Mod_LoadTextures( dbspmodel_t *bmod )
 
 				if( FS_FileExists( texpath, false ))
 				{
-					tx->gl_texturenum = GL_LoadTexture( texpath, NULL, 0, TF_ALLOW_EMBOSS );
+					tx->gl_texturenum = GL_LoadTexture( texpath, NULL, 0, TF_ALLOW_EMBOSS | txFlags );
 					bmod->wadlist.wadusage[j]++; // this wad are really used
 					break;
 				}
@@ -1914,7 +1934,7 @@ static void Mod_LoadTextures( dbspmodel_t *bmod )
 
 			if( custom_palette ) size += sizeof( short ) + 768;
 			Q_snprintf( texname, sizeof( texname ), "#%s:%s.mip", loadstat.name, mt->name );
-			tx->gl_texturenum = GL_LoadTexture( texname, (byte *)mt, size, TF_ALLOW_EMBOSS );
+			tx->gl_texturenum = GL_LoadTexture( texname, (byte *)mt, size, TF_ALLOW_EMBOSS | txFlags );
 		}
 
 		// if texture is completely missed

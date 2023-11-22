@@ -331,6 +331,16 @@ public:
 	BOOL CineCleanup( );
 
 	CBaseEntity* DropItem ( char *pszItemName, const Vector &vecPos, const Vector &vecAng );// drop an item.
+
+	// Oxygen System, note that any extra air supply comes primarily from items that stick to the player like the weapons do
+	flag m_fAirFlags; // All flags that control air related vars
+	float m_flAir; // Air currently held in the entity's lungs
+	float m_flMaxAir; // Maximum amount of air they can have
+
+	float m_flBreathingFrequency; // How frequently breathes
+	float m_flBreathingQuantity; // How much this entity breathes on each inhale
+
+	BOOL Breathes(void); // Does this monster breathe at all? Unaffected by Oxygen / Air if that is the case
 };
 
 
