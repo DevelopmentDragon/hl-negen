@@ -289,7 +289,7 @@ public:
 #define WEAPON_FLAG_DESYNCH_CHAMBER	BIT(3)	// This flag synchs decrementation of a clip's chambered rounds and the ones you can fire
 
 // Enum for clean-up routines
-// The CleanUp function is used to force weapons varriables
+// The CleanUp function is used to force weapons variables
 // to certain values when performing certain actions as to
 // avoid unwanted behavior when interrupting them
 // Example: Holstering a grenade after the pin was pulled
@@ -1908,6 +1908,95 @@ public:
 private:
 	unsigned short m_usMP5;
 	unsigned short m_usMP52;
+
+};
+
+class CLightningGun : public CBasePlayerWeapon
+{
+public:
+
+#ifndef CLIENT_DLL
+	int		Save(CSave& save);
+	int		Restore(CRestore& restore);
+	static	TYPEDESCRIPTION m_SaveData[];
+#endif
+
+	void Spawn(void);
+	void Precache(void);
+	int iItemSlot(void) { return 3; }
+	int GetItemInfo(ItemInfo* p);
+	void Holster(int skiplocal = 0);
+	void PrimaryAttack(void);
+	void SecondaryAttack(void);
+	void TertiaryAttack(void);
+	void QuaternaryAttack(void);
+	void QuinaryAttack(void);
+	BOOL Deploy(void);
+	BOOL CanDeploy(void);
+
+	BOOL ShouldReload(int iClipIndex);
+	void Reload(void);
+
+	void WeaponIdle(void);
+
+	void ItemPostFrame(void);
+	void UpdateBodygroup(void);
+	void PickupSound(void);
+	void DropSound(void);
+
+	int HUDIcon(void);
+	int HUDActiveIcon(void);
+	int ModeIcon(void);
+	int ModeIcon2(void);
+	int ModeIcon3(void);
+	int SmallIcon(void);
+
+	// Needed on every one to ensure these stay constant
+	static weaponInfo m_weaponInfo; // Ammo Types used by the weapon, STATIC and as such is never saved
+	weaponInfo* GetWeaponInfo(void) { return &m_weaponInfo; };
+
+	static legalAmmoTypes m_legalAmmoIndicies; // Indices of ammo types used by the weapon. Note that -1 means index invalid
+	int m_iAmmoIndices[2]; // Ammo indices currently loaded, the size of this must be equal to number of ammo types (not total number of ammo types)
+	int m_iTargetAmmoIndex[2];
+
+	legalAmmoTypes* GetLegalAmmoTypes(void) { return &m_legalAmmoIndicies; }; // Get all the legal ammo indices for this weapon
+	int* GetAmmoIndexArray(void) { return m_iAmmoIndices; }; // Return array containing the ammo indices for each ammo slot
+	int* GetTargetAmmoIndexArray(void) { return m_iTargetAmmoIndex; };
+	BOOL UsesAmmo(void) { return TRUE; };
+
+	// Unique functions
+	BOOL WaterDischarge(void);
+
+	void BeamLogic(void);
+
+	CBeam* m_pBeams[9];
+	float m_flBeamsEnd[9];
+	void ClearBeams(int iBeam);
+
+	float m_flNextAnimReset;
+	float m_flNextSoundReset;
+
+	CBaseEntity* pTargetOne[3];
+	CBaseEntity* pTargetTwo[3];
+	CBaseEntity* pTargetThree[3];
+	//BOOL AcquireTargets(int iMode); // Function that scans and acquires targets
+	//BOOL AcquireChain(int iBeam);
+
+	void UpdateBeamPosition(void);
+
+	CLightningGun(void);
+
+	virtual BOOL UseDecrement(void)
+	{
+#if defined( CLIENT_WEAPONS )
+		return TRUE;
+#else
+		return FALSE;
+#endif
+	}
+private:
+	unsigned short m_usLight1;
+	unsigned short m_usLight2;
 
 };
 

@@ -775,6 +775,12 @@ CBaseEntity * CBaseEntity::Create( char *szName, const Vector &vecOrigin, const 
 	return pEntity;
 }
 
+// By default, entities should not be shockable
+BOOL CBaseEntity::CanBeShocked(void)
+{
+	return FALSE;
+}
+
 // Check if varriable has or doesn't have the flags
 BOOL HasFlags(int fOriginal, int fFlags, int iCheckType)
 {
@@ -852,7 +858,6 @@ void SetFlags64(flag& fOriginal, flag fFlags, BOOL bSwitch)
 // Ammo index validity not checked, check it before calling this function
 BOOL CBaseEntity::PureHasPositiveAmmoIndex(int iAmmoIndex)
 {
-	ALERT(at_console, "PureHasePositiveAmmoIndex: %d\n", this->m_iaAmmo[iAmmoIndex]);
 	return (BOOL)(this->m_iaAmmo[iAmmoIndex] > 0);
 }
 

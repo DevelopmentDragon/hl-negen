@@ -56,6 +56,7 @@ int CBaseEntity::ShouldToggle( USE_TYPE useType, BOOL currentState ) { return 0;
 int	CBaseEntity :: DamageDecal( int iDamageId ) { return -1; }
 CBaseEntity * CBaseEntity::Create( char *szName, const Vector &vecOrigin, const Vector &vecAngles, edict_t *pentOwner ) { return NULL; }
 void CBaseEntity::SUB_Remove( void ) { }
+BOOL CBaseEntity::CanBeShocked(void) { return FALSE; }
 
 // CBaseDelay Stubs
 void CBaseDelay :: KeyValue( struct KeyValueData_s * ) { }
@@ -238,6 +239,7 @@ int CBaseMonster :: TakeHealth (float flHealth, int iDamageId) { return 0; }
 int CBaseMonster :: TakeDamage( entvars_t *pevInflictor, entvars_t *pevAttacker, float flDamage, int iDamageId ) { return 0; }
 int CBaseMonster::Restore( class CRestore & ) { return 1; }
 int CBaseMonster::Save( class CSave & ) { return 1; }
+BOOL CBaseMonster::CanBeShocked(void) { return FALSE; }
 
 int TrainSpeed(int iSpeed, int iMax) { 	return 0; }
 void CBasePlayer :: DeathSound( void ) { }

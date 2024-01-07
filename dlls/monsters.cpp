@@ -3444,3 +3444,9 @@ BOOL CBaseMonster :: ShouldFadeOnDeath( void )
 
 	return FALSE;
 }
+
+// Crappy hack for now until I implement something better
+BOOL CBaseMonster::CanBeShocked(void)
+{
+	return FALSE;
+}

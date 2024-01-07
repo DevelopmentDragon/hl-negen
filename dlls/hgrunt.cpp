@@ -185,6 +185,8 @@ public:
 	int		m_iSentence;
 
 	static const char *pGruntSentences[];
+
+	BOOL CanBeShocked(void) { return TRUE; };
 };
 
 LINK_ENTITY_TO_CLASS( monster_human_grunt, CHGrunt );

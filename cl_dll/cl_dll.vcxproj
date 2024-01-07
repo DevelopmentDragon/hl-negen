@@ -283,6 +283,7 @@
     <ClCompile Include="..\dlls\glock.cpp" />
     <ClCompile Include="..\dlls\handgrenade.cpp" />
     <ClCompile Include="..\dlls\hornetgun.cpp" />
+    <ClCompile Include="..\dlls\lightninggun.cpp" />
     <ClCompile Include="..\dlls\mp5.cpp" />
     <ClCompile Include="..\dlls\python.cpp" />
     <ClCompile Include="..\dlls\rpg.cpp" />

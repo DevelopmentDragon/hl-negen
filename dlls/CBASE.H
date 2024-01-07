@@ -409,6 +409,7 @@ public:
 	virtual BOOL HasAmmoIndex(int iAmmoIndex, flag fCheckFlags);
 	virtual BOOL HasAmmoName(const char* szAmmoName, flag fCheckFlags);
 
+	virtual BOOL CanBeShocked(void);
 
 	CBaseEntity(void)
 	{

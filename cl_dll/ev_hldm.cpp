@@ -71,6 +71,8 @@ void EV_HornetGunFire( struct event_args_s *args  );
 void EV_TripmineFire( struct event_args_s *args  );
 void EV_SnarkFire( struct event_args_s *args  );
 
+void EV_FireLight1(struct event_args_s* args);
+void EV_FireLight2(struct event_args_s* args);
 
 void EV_TrainPitchAdjust( struct event_args_s *args );
 }
@@ -1516,6 +1518,86 @@ void EV_SnarkFire( event_args_t *args )
 }
 //======================
 //	   SQUEAK END
+//======================
+
+//======================
+//	 DMC LIGHT START
+//======================
+void EV_FireLight1(event_args_t* args)
+{
+	int idx;
+	vec3_t origin;
+
+	idx = args->entindex;
+	VectorCopy(args->origin, origin);
+
+	vec3_t angles;
+	vec3_t velocity;
+
+	vec3_t vecSrc, vecAiming;
+	vec3_t up, right, forward;
+	float flSpread = 0.01;
+
+	vec3_t ShellVelocity;
+	vec3_t ShellOrigin;
+
+	VectorCopy(args->angles, angles);
+	VectorCopy(args->velocity, velocity);
+	AngleVectors(angles, forward, right, up);
+	EV_GetGunPosition(args, vecSrc, origin);
+	VectorCopy(forward, vecAiming);
+
+	if (args->bparam1)
+		gEngfuncs.pEventAPI->EV_PlaySound(idx, origin, CHAN_WEAPON, "weapons/dmc/light/fire.wav", 1, ATTN_NORM, 0, 94 + gEngfuncs.pfnRandomLong(0, 0xf));
+
+	if (args->bparam2)
+	{
+		if (EV_IsLocal(idx))
+		{
+			// Add muzzle flash to current weapon model
+			EV_MuzzleFlash();
+			EV_WeaponAnim(args->aparam1, args->aparam2, args->aparam3);
+			V_PunchAxis(0, gEngfuncs.pfnRandomFloat(-2, 2));
+		}
+	}
+
+	/*
+	for (size_t uiIndex = 0; uiIndex < 3; ++uiIndex)
+	{
+		gEngfuncs.pEfxAPI->R_BeamEnts(
+			args->entindex | 0x1000, args->entindex | ((uiIndex + 2) << 12),
+			gEngfuncs.pEventAPI->EV_FindModelIndex("sprites/lgtning.spr"),
+			0.08,
+			1, 75 * 0.01, 190 / 255.0, 30, 0, 10,
+			128 / 255.0, 128 / 255.0, 255.0 / 255.0);
+	}
+	*/
+}
+
+// We only predict the animation and sound
+// The grenade is still launched from the server.
+void EV_FireLight2(event_args_t* args)
+{
+	/*
+	int idx;
+	vec3_t origin;
+
+	idx = args->entindex;
+	VectorCopy(args->origin, origin);
+
+	if (EV_IsLocal(idx))
+	{
+		EV_WeaponAnim(args->aparam1, args->aparam2, args->aparam3);
+		V_PunchAxis(0, -10);
+	}
+
+	gEngfuncs.pEventAPI->EV_PlaySound(idx, origin, CHAN_WEAPON3, "weapons/mp5/alt_fire.wav", 1, ATTN_NORM, 0, 94 + gEngfuncs.pfnRandomLong(0, 0xf));
+	*/
+	return;
+}
+
+//======================
+//	  DMC LIGHT END
 //======================
 
 void EV_TrainPitchAdjust( event_args_t *args )

@@ -1048,35 +1048,28 @@ void CBasePlayer::WaterMove()
 		return;
 
 	// FarEast: Reimplemented
-	//if (!pev->waterlevel)
-	//{
-
-		if (pev->waterlevel > 3)
+	if (pev->waterlevel > 2)
+	{
+		ALERT(at_console, "Go away, I'm swimming!\n");
+		// leave the water.
+		switch (RANDOM_LONG(0, 3))
 		{
-			ALERT(at_console, "Go away, I'm swimming!\n");
-			// leave the water.
-			switch (RANDOM_LONG(0, 3))
-			{
-			case 0:
-				EMIT_SOUND(ENT(pev), CHAN_BODY, "player/pl_wade1.wav", 1.0f, ATTN_NORM);
-				break;
-			case 1:
-				EMIT_SOUND(ENT(pev), CHAN_BODY, "player/pl_wade2.wav", 1.0f, ATTN_NORM);
-				break;
-			case 2:
-				EMIT_SOUND(ENT(pev), CHAN_BODY, "player/pl_wade3.wav", 1.0f, ATTN_NORM);
-				break;
-			case 3:
-				EMIT_SOUND(ENT(pev), CHAN_BODY, "player/pl_wade4.wav", 1.0f, ATTN_NORM);
-				break;
-			}
-
-			pev->flags = pev->flags & ~FL_INWATER;
+		case 0:
+			EMIT_SOUND(ENT(pev), CHAN_BODY, "player/pl_wade1.wav", 1.0f, ATTN_NORM);
+			break;
+		case 1:
+			EMIT_SOUND(ENT(pev), CHAN_BODY, "player/pl_wade2.wav", 1.0f, ATTN_NORM);
+			break;
+		case 2:
+			EMIT_SOUND(ENT(pev), CHAN_BODY, "player/pl_wade3.wav", 1.0f, ATTN_NORM);
+			break;
+		case 3:
+			EMIT_SOUND(ENT(pev), CHAN_BODY, "player/pl_wade4.wav", 1.0f, ATTN_NORM);
+			break;
 		}
 
-		//return;
-	//}
-
+		pev->flags = pev->flags & ~FL_INWATER;
+	}
 }
 
 

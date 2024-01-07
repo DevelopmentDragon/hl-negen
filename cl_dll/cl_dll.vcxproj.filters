@@ -274,6 +274,9 @@
     <ClCompile Include="crosshairs.cpp">
       <Filter>Source Files\hl</Filter>
     </ClCompile>
+    <ClCompile Include="..\dlls\lightninggun.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="parsemsg.h">

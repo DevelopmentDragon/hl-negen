@@ -476,6 +476,8 @@ void W_Precache(void)
 	UTIL_PrecacheOther( "ammo_40mm" );
 	UTIL_PrecacheOther( "ammo_9mmh" );
 
+	UTIL_PrecacheOtherWeapon("weapon_dmc_light");
+
 	UTIL_PrecacheOther( "weaponbox" );// container for dropped deathmatch weapons
 
 

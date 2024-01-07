@@ -67,6 +67,8 @@ CMP5 g_Mp5;
 //CTripmine g_Tripmine;
 //CSqueak g_Snark;
 
+// DMC Weapon placeholder
+CLightningGun g_LightningGun;
 
 /*
 ======================
@@ -639,6 +641,7 @@ void HUD_InitClientWeapons( void )
 	//HUD_PrepEntity( &g_Satchel	, &player );
 	//HUD_PrepEntity( &g_Tripmine	, &player );
 	//HUD_PrepEntity( &g_Snark	, &player );
+	HUD_PrepEntity(&g_LightningGun, &player);
 }
 
 /*
@@ -706,6 +709,9 @@ void HUD_WeaponsPostThink( local_state_s *from, local_state_s *to, usercmd_t *cm
 	{
 		case WEAPON_MP5:
 			pWeapon = &g_Mp5;
+			break;
+		case WEAPON_M4:
+			pWeapon = &g_LightningGun;
 			break;
 	}
 

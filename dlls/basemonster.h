@@ -341,6 +341,8 @@ public:
 	float m_flBreathingQuantity; // How much this entity breathes on each inhale
 
 	BOOL Breathes(void); // Does this monster breathe at all? Unaffected by Oxygen / Air if that is the case
+
+	virtual BOOL CanBeShocked(void);
 };
 
 

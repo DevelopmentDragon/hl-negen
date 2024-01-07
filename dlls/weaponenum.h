@@ -801,6 +801,14 @@ enum medkit_e
 // Flare
 // ???
 
+// DMC Lightning Gun
+enum dmg_light_e
+{
+	LIGHT_IDLE = 0,
+	LIGHT_FIRE,
+
+	LIGHT_LAST
+};
 
 // EXTRA STUFF
 

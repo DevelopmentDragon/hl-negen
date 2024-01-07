@@ -584,8 +584,8 @@ void CISlave :: Precache()
 int CISlave :: TakeDamage( entvars_t* pevInflictor, entvars_t* pevAttacker, float flDamage, int iDamageId)
 {
 	// don't slash one of your own
-	if ( /*(iDamageId & DMG_SLASH) && */ pevAttacker && IRelationship(Instance(pevAttacker)) < R_DL)
-		return 0;
+	//if ( /*(iDamageId & DMG_SLASH) && */ pevAttacker && IRelationship(Instance(pevAttacker)) < R_DL)
+	//	return 0;
 
 	m_afMemory |= bits_MEMORY_PROVOKED;
 	return CSquadMonster::TakeDamage(pevInflictor, pevAttacker, flDamage, iDamageId);

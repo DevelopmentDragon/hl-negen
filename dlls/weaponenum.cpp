@@ -712,6 +712,13 @@ static const animinfo_t medkitAnimInfo[MEDKIT_LAST] =
 	{ MEDKIT_DRAW, 16, 30, false },
 };
 
+// Lightning Gun
+static const animinfo_t lightAnimInfo[LIGHT_LAST] =
+{
+	{ LIGHT_IDLE, 46, 30, false },
+	{ LIGHT_FIRE, 46, 30, false },
+};
+
 // Final
 const weaponaiminfo_t weaponAnimInfoArray[128] =
 {
@@ -737,7 +744,7 @@ const weaponaiminfo_t weaponAnimInfoArray[128] =
 
 	{ &(questionAnimInfo[0]), QUESTION_LAST },//WEAPON_MICROSMG, // Not yet implemented
 	{ &(mp5AnimInfo[0]), MP5_LAST },//WEAPON_MP5,
-	{ &(m4AnimInfo[0]), M4_LAST },//WEAPON_M4,
+	{ &(lightAnimInfo[0]), LIGHT_LAST },//WEAPON_M4,
 	{ &(questionAnimInfo[0]), QUESTION_LAST },//WEAPON_AK47, // Not yet implemented
 	{ &(nailgunAnimInfo[0]), NAILGUN_LAST },//WEAPON_NAILGUN,
 

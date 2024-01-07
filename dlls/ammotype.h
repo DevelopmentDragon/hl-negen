@@ -38,7 +38,14 @@ static ammoType ammoRegistery = {
 	"40mmB",
 	"40mmS",
 	"40mmG",
-	"40mm+"
+	"40mm+",
+
+	"ecells",
+	"ocecells",
+	"opecells",
+	"pcells",
+	"ocpcells",
+	"oppcells"
 };
 
 int GetAmmoRegisterySize(void);

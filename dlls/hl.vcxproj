@@ -490,6 +490,7 @@
     <ClCompile Include="items.cpp" />
     <ClCompile Include="laserspot.cpp" />
     <ClCompile Include="leech.cpp" />
+    <ClCompile Include="lightninggun.cpp" />
     <ClCompile Include="lights.cpp" />
     <ClCompile Include="maprules.cpp" />
     <ClCompile Include="monstermaker.cpp" />

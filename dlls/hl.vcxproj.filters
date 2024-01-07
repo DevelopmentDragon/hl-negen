@@ -336,6 +336,9 @@
     <ClCompile Include="oxygen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lightninggun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="activity.h">
