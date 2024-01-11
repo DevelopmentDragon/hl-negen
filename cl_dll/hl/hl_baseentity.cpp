@@ -434,6 +434,14 @@ BOOL CBasePlayerItem::CanDuplicate(CBasePlayerItem* pOriginal) { return FALSE; }
 
 void CBasePlayer::SendWeaponRecoilTest(int iAmount) { return; };
 
+// EHANDLE stuff
+edict_t* EHANDLE::Get(void) { return NULL; };
+edict_t* EHANDLE::Set(edict_t* pent) { return NULL; };
+EHANDLE :: operator CBaseEntity* () { return NULL; };
+CBaseEntity* EHANDLE :: operator = (CBaseEntity* pEntity) { return NULL; };
+EHANDLE :: operator int() { return FALSE; };
+CBaseEntity * EHANDLE :: operator -> () { return NULL; };
+
 // Check if varriable has or doesn't have the flags
 BOOL HasFlags(int fOriginal, int fFlags, int iCheckType)
 {

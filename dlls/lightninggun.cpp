@@ -21,6 +21,7 @@
 #include "nodes.h"
 #include "player.h"
 #include "soundent.h"
+#include "basemonster.h"
 
 LINK_ENTITY_TO_CLASS(weapon_dmc_light, CLightningGun);
 
@@ -30,9 +31,9 @@ TYPEDESCRIPTION	CLightningGun::m_SaveData[] =
 {
 	DEFINE_ARRAY(CLightningGun, m_iAmmoIndices, FIELD_INTEGER, 2),
 	DEFINE_ARRAY(CLightningGun, m_iTargetAmmoIndex, FIELD_INTEGER, 2),
-	DEFINE_ARRAY(CLightningGun, pTargetOne, FIELD_ENTITY, 3),
-	DEFINE_ARRAY(CLightningGun, pTargetTwo, FIELD_ENTITY, 3),
-	DEFINE_ARRAY(CLightningGun, pTargetThree, FIELD_ENTITY, 3),
+	DEFINE_ARRAY(CLightningGun, pTargetOne, FIELD_EHANDLE, 3),
+	DEFINE_ARRAY(CLightningGun, pTargetTwo, FIELD_EHANDLE, 3),
+	DEFINE_ARRAY(CLightningGun, pTargetThree, FIELD_EHANDLE, 3),
 	DEFINE_ARRAY(CLightningGun, m_flBeamsEnd, FIELD_FLOAT, 9),
 };
 
@@ -67,7 +68,6 @@ CLightningGun::CLightningGun(void)
 		if (i < 3) pTargetOne[i % 3] = NULL;
 		if (i < 6) pTargetTwo[i % 3] = NULL;
 		if (i < 9) pTargetThree[i % 3] = NULL;
-
 		m_pBeams[i] = NULL;
 		m_flBeamsEnd[i] = 0.0f;
 	}
@@ -108,6 +108,19 @@ int CLightningGun::SmallIcon(void)
 	return 26;
 
 }
+
+// To determine which firing mode we're using, we need some bit math fuckery
+// Blueprint for weapon functions is as follows
+// CONTINUOUS MODE:
+//	-Primary Fire: Straight line aka DMC/Quake 1 Lightning Gun
+//	-Secondary Fire: Three homing bolts aka RTCW Tesla Gun
+//	-Primary and secondary: Focus three bolts at once in a straight line.
+//	-Tertiary Fire: Hold for chaining mode. Primary becomes cut Chain Lightning Gun, Secondary becomes the same with each beam
+// ALTERNATIVE MODE:
+//	-Primary Fire: Charge up to fire a straight bolt that zaps the enemy. Fires automatically when fully charged. Damage poportional to distance
+//	-Secondary Fire: Fire a projectile that zaps nearby enemies and that can be detonated by firing the primary on it aka Unreal 1 ASMD projectile.
+//	-Tertiary Fire: Toggle chaining
+// RELOAD: Switch between alternative and
 
 void CLightningGun::Spawn(void)
 {
@@ -227,17 +240,9 @@ void CLightningGun::BeamLogic(void)
 		m_flNextSoundReset = 0.0f;
 	}
 
-	// Apply beam logic
+	// Beam Timers
 	for (int i = 0; i < 9; i++)
 	{
-		// Reset targets
-		for (int i = 0; i < 3; i++)
-		{
-			pTargetOne[i] = NULL;
-			pTargetTwo[i] = NULL;
-			pTargetThree[i] = NULL;
-		}
-
 		if (m_pBeams[i])
 		{
 			if (m_flBeamsEnd[i] <= 0)
@@ -273,33 +278,128 @@ BOOL CLightningGun::WaterDischarge(void)
 	return FALSE;
 }
 
-//=============================================================================================================
-// ClearBeam: Clears the taser whenever called, entity removed, pointer cleared, timer reset
-//=============================================================================================================
+//===========================================================================================================
+// ClearBeams
+// Arguments: <32-bit integer> iBeam, which specific beam
+// Returns: Nothing
+// Clears a specific beam (based on index) from memory.
+// Negative numbers clear all beams.
+// Any number over maximum will cause function to return early.
+//===========================================================================================================
 void CLightningGun::ClearBeams(int iBeam)
 {
-	if (m_pBeams[iBeam])
+	// Do not do anything if beam index excedes maximum
+	if (iBeam > 8)
+		return;
+
+	// If count is negative clear all beams, otherwise, clear only the specific beam
+	int iMin = iBeam;
+	int iMax = iBeam + 1;
+	if (iBeam < 0) { iMin = 0; iMax = 9; }
+
+	// Using a loop for both specific beam clear and global beam clear
+	for (int i = iMin; i < iMax; i++)
 	{
-		m_flBeamsEnd[iBeam] = 0;
-		UTIL_Remove(m_pBeams[iBeam]);
-		m_pBeams[iBeam] = NULL;
+		if (m_pBeams[i])
+		{
+			m_flBeamsEnd[i] = 0.0f;
+			UTIL_Remove(m_pBeams[i]);
+			m_pBeams[i] = NULL;
+		}
 	}
+}
+
+//===========================================================================================================
+// ClearTargets
+// Arguments: <32-bit integer> iTarget, which target beam
+// Returns: Nothing
+// Clears a specific target (based on index) from memory.
+// Negative numbers clear all targets.
+// Any number over maximum will cause function to return early.
+//===========================================================================================================
+void CLightningGun::ClearTargets(int iTarget)
+{
+	// Do not do anything if beam index excedes maximum
+	if (iTarget > 8)
+		return;
+
+	// If count is negative clear all beams, otherwise, clear only the specific beam
+	int iMin = iTarget;
+	int iMax = iTarget + 1;
+	if (iTarget < 0) { iMin = 0; iMax = 9; }
+
+	// Using a loop for both specific beam clear and global beam clear
+	for (int i = iMin; i < iMax; i++)
+	{
+		EHANDLE* phTarget = (i % 3 == 0) ? pTargetOne : ((i % 3 == 1) ? pTargetTwo : pTargetThree);
+		if (phTarget[i % 3])
+		{
+			phTarget[i % 3] = NULL;
+		}
+	}
+}
+
+//===========================================================================================================
+// ValidTarget
+// Arguments: <EHANDLE> hTarget, the target we're checking
+// Returns: <Boolean> True or False
+// Checks whether the target is valid or not for latching or chaining
+// Target validity depends on the following factors:
+//	-If the target in question does exist
+//	-If the weapon is currently owned by an entity
+//	-If the target can be shocked, this depends on the CanBeShocked boolean function off of individual
+//	 CBaseEntity(s)
+//	-If the target is within owner LOS and can be reached by the beam
+//===========================================================================================================
+BOOL CLightningGun::ValidTarget(EHANDLE hTarget)
+{
+	if (hTarget != NULL)
+	{
+		if (m_pPlayer)
+		{
+			if (hTarget->CanBeShocked())
+			{
+				if (m_pPlayer->FVisible(hTarget))
+				{
+					return TRUE;
+				}
+			}
+		}
+	}
+
+	return FALSE;
 }
 
 void CLightningGun::UpdateBeamPosition(void)
 {
-	// Update beam position depending on firing mode
-	if ((m_pPlayer->pev->button & IN_ATTACK))
+	if (m_pPlayer)
 	{
-		if (m_pBeams[0])
+		if (pTargetOne[0] != NULL || pTargetOne[1] != NULL || pTargetOne[2] != NULL)
 		{
-			TraceResult tr;
-			Vector vecSrc = m_pPlayer->GetGunPosition() - gpGlobals->v_up * 2;
-			Vector vecDir = gpGlobals->v_forward;
-			float flDist = 8192;
-			UTIL_TraceLine(vecSrc, vecSrc + vecDir * flDist, dont_ignore_monsters, ENT(m_pPlayer->pev), &tr);
-			m_pBeams[0]->PointEntInit(tr.vecEndPos, m_pPlayer->entindex());
-			m_pBeams[0]->SetEndAttachment(1);
+			for (int i = 0; i < 3; i++)
+			{
+				if (m_pBeams[i])
+				{
+					if (pTargetOne[i] != NULL)
+					{
+						m_pBeams[i]->PointEntInit(pTargetOne[i]->Center(), m_pPlayer->entindex());
+						m_pBeams[i]->SetEndAttachment(1);
+					}
+				}
+			}
+		}
+		else
+		{
+			if (m_pBeams[0])
+			{
+				TraceResult tr;
+				Vector vecSrc = m_pPlayer->GetGunPosition() - gpGlobals->v_up * 2;
+				Vector vecDir = gpGlobals->v_forward;
+				float flDist = 8192;
+				UTIL_TraceLine(vecSrc, vecSrc + vecDir * flDist, dont_ignore_monsters, ENT(m_pPlayer->pev), &tr);
+				m_pBeams[0]->PointEntInit(tr.vecEndPos, m_pPlayer->entindex());
+				m_pBeams[0]->SetEndAttachment(1);
+			}
 		}
 	}
 }
@@ -491,8 +591,10 @@ void CLightningGun::SecondaryAttack(void)
 				if (pEntity->IsAlive())
 				{
 					//ALERT(at_console, "Got: %s\n", STRING(pEntity->pev->classname));
+#ifndef CLIENT_DLL
 					pTargetOne[numTargets] = pEntity;
 					numTargets++;
+#endif
 				}
 			}
 		}
@@ -552,8 +654,6 @@ void CLightningGun::SecondaryAttack(void)
 				}
 				else
 				{
-					m_pBeams[i]->PointEntInit(pTargetOne[i]->Center(), m_pPlayer->entindex());
-					m_pBeams[i]->SetEndAttachment(1);
 					m_flBeamsEnd[i] = 0.1;
 				}
 			}
@@ -591,14 +691,6 @@ void CLightningGun::SecondaryAttack(void)
 	PLAYBACK_EVENT_FULL(FEV_NOTHOST, m_pPlayer->edict(), m_usLight1, 0.0, (float*)&g_vecZero, (float*)&g_vecZero, vecDir.x, vecDir.y, 0, 0,
 		bUpdateSound, bUpdateAnimation,
 		(float*)&g_vecZero, (float*)&g_vecZero, iAnim, flFramerate, byFrame);
-
-	for (int i = 0; i < 3; i++)
-	{
-
-		pTargetOne[i] = NULL;
-		pTargetTwo[i] = NULL;
-		pTargetThree[i] = NULL;
-	}
 
 	m_flNextPrimaryAttack = UTIL_WeaponTimeBase() + 0.1;
 	m_flNextSecondaryAttack = UTIL_WeaponTimeBase() + 0.1;

@@ -1976,9 +1976,22 @@ public:
 	float m_flNextAnimReset;
 	float m_flNextSoundReset;
 
-	CBaseEntity* pTargetOne[3];
-	CBaseEntity* pTargetTwo[3];
-	CBaseEntity* pTargetThree[3];
+	BOOL InTarget(EHANDLE hTarget); // Check whether or not we already have this target
+	BOOL InChain(EHANDLE hTarget); // Check whether we're already chaining this target
+	void ReconstructChain(void);
+	void Retarget(void);
+
+	BOOL ValidTarget(EHANDLE hTarget); // Check whether or not target pointed is valid
+	void ClearTargets(int iTarget);
+	EHANDLE pTargetOne[3];
+	EHANDLE pTargetTwo[3];
+	EHANDLE pTargetThree[3];
+
+
+	// Operating on a simple bit operation, 1 is chain, 2 is multi
+	enum m_eTargetmode_e { DMC_LIGHT_TARGET_SINGLE = 0, DMC_LIGHT_TARGET_CHAIN, DMC_LIGHT_TARGET_TRI };
+
+	// BOOL CheckTargets(void);
 	//BOOL AcquireTargets(int iMode); // Function that scans and acquires targets
 	//BOOL AcquireChain(int iBeam);
 
