@@ -1967,35 +1967,29 @@ public:
 	// Unique functions
 	BOOL WaterDischarge(void);
 
-	void BeamLogic(void);
-
-	CBeam* m_pBeams[9];
-	float m_flBeamsEnd[9];
-	void ClearBeams(int iBeam);
-
 	float m_flNextAnimReset;
 	float m_flNextSoundReset;
 
-	BOOL InTarget(EHANDLE hTarget); // Check whether or not we already have this target
-	BOOL InChain(EHANDLE hTarget); // Check whether we're already chaining this target
-	void ReconstructChain(void);
-	void Retarget(void);
-
-	BOOL ValidTarget(EHANDLE hTarget); // Check whether or not target pointed is valid
+	BOOL InTarget(CBaseEntity* pTarget); // Check whether or not we already have this target
+	BOOL InChain(CBaseEntity* pTarget); // Check whether we're already chaining this target
+	BOOL ValidTarget(CBaseEntity* hTarget); // Check whether or not target pointed is valid
 	void ClearTargets(int iTarget);
-	EHANDLE pTargetOne[3];
-	EHANDLE pTargetTwo[3];
-	EHANDLE pTargetThree[3];
+	EHANDLE pTargetOne[3]; // Latch targets
+	EHANDLE pTargetTwo[3]; // Chain first targets
+	EHANDLE pTargetThree[3]; // Chain chain *targets
+	BOOL TargetExists(EHANDLE phTargetArray);
+	int m_iNumTargets; // Number of targets acquired
+	BOOL AcquireTargets(void); // Function that scans and acquires targets
+	void DamageTargets(void); // Proceed to deal damage to targets
 
-
-	// Operating on a simple bit operation, 1 is chain, 2 is multi
-	enum m_eTargetmode_e { DMC_LIGHT_TARGET_SINGLE = 0, DMC_LIGHT_TARGET_CHAIN, DMC_LIGHT_TARGET_TRI };
-
-	// BOOL CheckTargets(void);
-	//BOOL AcquireTargets(int iMode); // Function that scans and acquires targets
-	//BOOL AcquireChain(int iBeam);
-
+	CBeam* m_pBeams[9];
+	float m_flBeamsTime;
+	void MakeBeams(void);
+	void ClearBeams(int iBeam);
 	void UpdateBeamPosition(void);
+	void BeamLogic(void);
+
+	void RegularAttack(void);
 
 	CLightningGun(void);
 

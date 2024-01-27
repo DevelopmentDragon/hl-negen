@@ -442,6 +442,10 @@ CBaseEntity* EHANDLE :: operator = (CBaseEntity* pEntity) { return NULL; };
 EHANDLE :: operator int() { return FALSE; };
 CBaseEntity * EHANDLE :: operator -> () { return NULL; };
 
+// Beam stuff
+
+void CBeam::PointsInit(const Vector& start, const Vector& end) { return; };
+
 // Check if varriable has or doesn't have the flags
 BOOL HasFlags(int fOriginal, int fFlags, int iCheckType)
 {

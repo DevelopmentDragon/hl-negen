@@ -25,6 +25,12 @@
 
 LINK_ENTITY_TO_CLASS(weapon_dmc_light, CLightningGun);
 
+#define DMC_LIGHT_STF_ALT		WEAPON_STF_CUSTOM5
+#define DMC_LIGHT_STF_CHAIN		WEAPON_STF_CUSTOM6
+#define DMC_LIGHT_STF_TRI		WEAPON_STF_CUSTOM7
+#define DMC_LIGHT_STF_CHARGING	WEAPON_STF_CUSTOM8
+#define DMC_LIGHT_STF_ATTACKING	WEAPON_STF_CUSTOM9
+
 #ifndef CLIENT_DLL
 
 TYPEDESCRIPTION	CLightningGun::m_SaveData[] =
@@ -34,7 +40,7 @@ TYPEDESCRIPTION	CLightningGun::m_SaveData[] =
 	DEFINE_ARRAY(CLightningGun, pTargetOne, FIELD_EHANDLE, 3),
 	DEFINE_ARRAY(CLightningGun, pTargetTwo, FIELD_EHANDLE, 3),
 	DEFINE_ARRAY(CLightningGun, pTargetThree, FIELD_EHANDLE, 3),
-	DEFINE_ARRAY(CLightningGun, m_flBeamsEnd, FIELD_FLOAT, 9),
+	DEFINE_FIELD(CLightningGun, m_flBeamsTime, FIELD_FLOAT),
 };
 
 IMPLEMENT_SAVERESTORE(CLightningGun, CBasePlayerWeapon);
@@ -69,9 +75,9 @@ CLightningGun::CLightningGun(void)
 		if (i < 6) pTargetTwo[i % 3] = NULL;
 		if (i < 9) pTargetThree[i % 3] = NULL;
 		m_pBeams[i] = NULL;
-		m_flBeamsEnd[i] = 0.0f;
 	}
 
+	m_flBeamsTime = 0.0f;
 	m_flNextAnimReset = 0.0f;
 	m_flNextSoundReset = 0.0f;
 }
@@ -114,12 +120,11 @@ int CLightningGun::SmallIcon(void)
 // CONTINUOUS MODE:
 //	-Primary Fire: Straight line aka DMC/Quake 1 Lightning Gun
 //	-Secondary Fire: Three homing bolts aka RTCW Tesla Gun
-//	-Primary and secondary: Focus three bolts at once in a straight line.
-//	-Tertiary Fire: Hold for chaining mode. Primary becomes cut Chain Lightning Gun, Secondary becomes the same with each beam
-// ALTERNATIVE MODE:
+//	-Tertiary Fire: Toggle between chaining and non-chaining
+// ALTERNATE MODE:
 //	-Primary Fire: Charge up to fire a straight bolt that zaps the enemy. Fires automatically when fully charged. Damage poportional to distance
-//	-Secondary Fire: Fire a projectile that zaps nearby enemies and that can be detonated by firing the primary on it aka Unreal 1 ASMD projectile.
-//	-Tertiary Fire: Toggle chaining
+//	-Secondary Fire: Same as primary, can be charged
+//	-Tertiary Fire: Fire a projectile that zaps nearby enemies and that can be detonated by firing the primary on it aka Unreal 1 ASMD projectile.
 // RELOAD: Switch between alternative and
 
 void CLightningGun::Spawn(void)
@@ -138,6 +143,8 @@ void CLightningGun::Precache(void)
 	PRECACHE_MODEL("models/v_light.mdl");
 	PRECACHE_MODEL("models/w_light.mdl");
 	PRECACHE_MODEL("models/p_light.mdl");
+
+	PRECACHE_MODEL("sprites/lgtning.spr");
 
 	PRECACHE_SOUND("weapons/dmc/light/fire.wav");
 	PRECACHE_SOUND("weapons/dmc/light/firechargepent.wav");
@@ -163,8 +170,8 @@ int CLightningGun::GetItemInfo(ItemInfo* p)
 
 void CLightningGun::ItemPostFrame(void)
 {
+	// Timer and ticks for beam
 	BeamLogic();
-
 	UpdateBodygroup();
 	CBasePlayerWeapon::ItemPostFrame();
 }
@@ -212,14 +219,14 @@ void CLightningGun::Holster(int skiplocal)
 
 void CLightningGun::BeamLogic(void)
 {
-	UpdateBeamPosition();
-
 	if (m_pPlayer)
 	{
-		if (!(m_pPlayer->pev->button & (IN_ATTACK | IN_ATTACK2)))
+		UpdateBeamPosition();
+		if (!HasWeaponStatusFlags(DMC_LIGHT_STF_ATTACKING))
 		{
 			m_flNextAnimReset = 0.0f;
 			m_flNextSoundReset = 0.0f;
+			ClearBeams(-1);
 		}
 		else
 		{
@@ -241,16 +248,10 @@ void CLightningGun::BeamLogic(void)
 	}
 
 	// Beam Timers
-	for (int i = 0; i < 9; i++)
-	{
-		if (m_pBeams[i])
-		{
-			if (m_flBeamsEnd[i] <= 0)
-				ClearBeams(i);
-			else
-				m_flBeamsEnd[i] = max(m_flBeamsEnd[i] - gpGlobals->frametime, 0.0f);
-		}
-	}
+	//if (m_flBeamsTime <= 0)
+	//	ClearBeams(-1);
+	//else
+	//	m_flBeamsTime = max(m_flBeamsTime - gpGlobals->frametime, 0.0f);
 }
 
 // WaterDischarge: If you do anything with shock based damage or abilities whilst underwater, discharge
@@ -302,7 +303,6 @@ void CLightningGun::ClearBeams(int iBeam)
 	{
 		if (m_pBeams[i])
 		{
-			m_flBeamsEnd[i] = 0.0f;
 			UTIL_Remove(m_pBeams[i]);
 			m_pBeams[i] = NULL;
 		}
@@ -331,12 +331,17 @@ void CLightningGun::ClearTargets(int iTarget)
 	// Using a loop for both specific beam clear and global beam clear
 	for (int i = iMin; i < iMax; i++)
 	{
-		EHANDLE* phTarget = (i % 3 == 0) ? pTargetOne : ((i % 3 == 1) ? pTargetTwo : pTargetThree);
-		if (phTarget[i % 3])
-		{
-			phTarget[i % 3] = NULL;
-		}
+		if (i >= 0 && i < 3)
+			pTargetOne[i] = NULL;
+
+		if (i >= 3 && i < 6)
+			pTargetTwo[i - 3] = NULL;
+
+		if (i >= 6 && i < 9)
+			pTargetThree[i - 6] = NULL;
 	}
+
+	m_iNumTargets = 0;
 }
 
 //===========================================================================================================
@@ -351,15 +356,15 @@ void CLightningGun::ClearTargets(int iTarget)
 //	 CBaseEntity(s)
 //	-If the target is within owner LOS and can be reached by the beam
 //===========================================================================================================
-BOOL CLightningGun::ValidTarget(EHANDLE hTarget)
+BOOL CLightningGun::ValidTarget(CBaseEntity *pTarget)
 {
-	if (hTarget != NULL)
+	if (pTarget != NULL)
 	{
 		if (m_pPlayer)
 		{
-			if (hTarget->CanBeShocked())
+			if (pTarget->CanBeShocked())
 			{
-				if (m_pPlayer->FVisible(hTarget))
+				if (m_pPlayer->FVisible(pTarget))
 				{
 					return TRUE;
 				}
@@ -370,130 +375,428 @@ BOOL CLightningGun::ValidTarget(EHANDLE hTarget)
 	return FALSE;
 }
 
-void CLightningGun::UpdateBeamPosition(void)
+BOOL CLightningGun::TargetExists(EHANDLE phTargetArray)
+{
+	if ((CBaseEntity*)phTargetArray)
+	{
+		return TRUE;
+	}
+
+	return FALSE;
+}
+
+BOOL CLightningGun::InTarget(CBaseEntity* pTarget)
+{
+	if (pTarget)
+	{
+		for (int i = 0; i < 3; i++)
+		{
+			if (TargetExists(pTargetOne[i]) && (pTargetOne[i] == pTarget))
+				return TRUE;
+		}
+	}
+	return FALSE;
+}
+
+BOOL CLightningGun::InChain(CBaseEntity* pTarget)
+{
+	if (pTarget)
+	{
+		for (int i = 0; i < 3; i++)
+		{
+			if (TargetExists(pTargetTwo[i]) && pTargetTwo[i] == pTarget)
+				return TRUE;
+
+			if (TargetExists(pTargetThree[i]) && pTargetThree[i] == pTarget)
+				return TRUE;
+		}
+	}
+	return FALSE;
+}
+
+//===========================================================================================================
+// AcquireTargets
+// Arguments: Nothing
+// Returns: <Boolean> TRUE or FALSE, whether we have acquired a positive number of targets
+// Function in charge of acquiring targets for the lightning gun depending on the mode.
+// Notes:
+//  -Function will default to returning false if it has no owner
+//	-It is recommended to clear targets before calling this function again
+//===========================================================================================================
+BOOL CLightningGun::AcquireTargets(void)
 {
 	if (m_pPlayer)
 	{
-		if (pTargetOne[0] != NULL || pTargetOne[1] != NULL || pTargetOne[2] != NULL)
+		// Sphere search
+		CBaseEntity* pEntity = NULL;
+
+		// Acquire target directly in front of you
+		Vector vecSrc = m_pPlayer->GetGunPosition() - gpGlobals->v_up * 2;
+		TraceResult tr;
+		CBaseEntity* pTraceEntity = NULL;
+		Vector anglesAim = m_pPlayer->pev->v_angle + m_pPlayer->pev->punchangle;
+		UTIL_MakeVectors(anglesAim);
+		anglesAim.x = -anglesAim.x;
+		Vector vecDir = gpGlobals->v_forward;
+		float flDist = 8192;
+		UTIL_TraceLine(vecSrc, vecSrc + vecDir * flDist, dont_ignore_monsters, ENT(m_pPlayer->pev), &tr);
+		
+		// If we're not tri-targeting, we're single targeting
+		if (HasWeaponStatusFlags(DMC_LIGHT_STF_TRI))
 		{
+			// We look for visible, valid targets up to a maximum of three
+			while ((pEntity = UTIL_FindEntityInSphere(pEntity, vecSrc, flDist)) != NULL)
+			{
+				//ALERT(at_console, "Found: %s\n", STRING(pEntity->pev->classname));
+				if (pEntity == this || pEntity == m_pPlayer)
+				{
+					continue;
+				}
+
+				if (ValidTarget(pEntity))
+				{
+					pTargetOne[m_iNumTargets % 3] = pEntity; // Don't decrement one since we start at zero targets for this
+					m_iNumTargets++;
+
+					// We found three targets break
+					if (m_iNumTargets >= 3) break;
+				}
+			}
+		}
+		else
+		{
+			// Single targeting gets immediately assigned to sphere search in case of chaining
+			pTraceEntity = CBaseEntity::Instance(tr.pHit);
+			pTargetOne[0] = pTraceEntity;
+			pEntity = pTraceEntity; // Set in case of chaining
+			m_iNumTargets++;
+		}
+
+
+		// Chaining requires checking whether we have a single or multiple targets
+		if (!HasWeaponStatusFlags(DMC_LIGHT_STF_TRI) && !ValidTarget(pTargetOne[0]))
+		{
+			goto cancel;
+		}
+		else
+		{
+			if (HasWeaponStatusFlags(DMC_LIGHT_STF_CHAIN) && m_iNumTargets > 0)
+			{
+				// We look for visible, valid targets up to a maximum of three
+				while ((pEntity = UTIL_FindEntityInSphere(pEntity, vecSrc, flDist)) != NULL)
+				{
+					// Do not include this entity, the player or chained and targeted entities
+					if (pEntity == this || pEntity == m_pPlayer || InChain(pEntity) || InTarget(pEntity))
+					{
+						continue;
+					}
+
+					if (ValidTarget(pEntity))
+					{
+						if (HasWeaponStatusFlags(DMC_LIGHT_STF_TRI))
+						{
+							// Chains go
+							if (m_iNumTargets > 3 && m_iNumTargets < 7) pTargetTwo[m_iNumTargets % 3] = pEntity;
+							if (m_iNumTargets > 6) pTargetThree[m_iNumTargets % 3] = pEntity;
+							m_iNumTargets++;
+
+							// Do not go over 9 targets
+							if (m_iNumTargets >= 9) break;
+						}
+						else
+						{
+							// Chains go
+							if (m_iNumTargets == 1) pTargetTwo[0] = pEntity;
+							if (m_iNumTargets == 2) pTargetThree[0] = pEntity;
+							m_iNumTargets++;
+
+							// Do not go over 3 targets
+							if (m_iNumTargets >= 3) break;
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	cancel:
+	// If by this call we have more than a single target, return TRUE
+	return (m_iNumTargets > 0);
+}
+
+void CLightningGun::DamageTargets(void)
+{
+	float flDamage = gSkillData.plrDmgShockTase;
+
+	if (HasWeaponStatusFlags(DMC_LIGHT_STF_TRI))
+	{
+		int numOnes = 0;
+
+		for (int i = 0; i < 3; i++)
+		{
+			if (TargetExists(pTargetOne[i]))
+			{
+				numOnes++;
+			}
+		}
+
+		for (int i = 0; i < numOnes; i++)
+		{
+			if (TargetExists(pTargetOne[i]))
+			{
+				if (pTargetOne[i]->pev->takedamage)
+				{
+					pTargetOne[i]->TakeDamage(m_pPlayer->pev, pTargetOne[i]->pev, flDamage * 1.0 + 0.33 * (3 - numOnes) * 0.5, ID_DMG_MP5);
+				}
+			}
+		}
+
+		if (HasWeaponStatusFlags(DMC_LIGHT_STF_CHAIN))
+		{
+			int numTwos = 0;
+			int numThrees = 0;
+
 			for (int i = 0; i < 3; i++)
 			{
-				if (m_pBeams[i])
+				if (TargetExists(pTargetTwo[i]))
 				{
-					if (pTargetOne[i] != NULL)
+					numTwos++;
+				}
+
+				if (TargetExists(pTargetThree[i]))
+				{
+					numThrees++;
+				}
+			}
+
+			for (int i = 0; i < numTwos; i++)
+			{
+				if (TargetExists(pTargetTwo[i]))
+				{
+					if (pTargetTwo[i]->pev->takedamage)
 					{
-						m_pBeams[i]->PointEntInit(pTargetOne[i]->Center(), m_pPlayer->entindex());
-						m_pBeams[i]->SetEndAttachment(1);
+						pTargetTwo[i]->TakeDamage(m_pPlayer->pev, pTargetTwo[i]->pev, flDamage * 1.0 + 0.33 * (3 - numTwos) * 0.25, ID_DMG_MP5);
+					}
+				}
+			}
+
+			for (int i = 0; i < numThrees; i++)
+			{
+				if (TargetExists(pTargetThree[i]))
+				{
+					if (pTargetThree[i]->pev->takedamage)
+					{
+						pTargetThree[i]->TakeDamage(m_pPlayer->pev, pTargetThree[i]->pev, flDamage * 1.0 + 0.33 * (3 - numThrees) * 0.125, ID_DMG_MP5);
+					}
+				}
+			}
+		}
+	}
+	else
+	{
+		if (HasWeaponStatusFlags(DMC_LIGHT_STF_CHAIN))
+		{
+			int numChain = 0;
+			numChain += (TargetExists(pTargetOne[0])) ? 1 : 0;
+			numChain += (TargetExists(pTargetTwo[0])) ? 1 : 0;
+			numChain += (TargetExists(pTargetThree[0])) ? 1 : 0;
+
+			if (TargetExists(pTargetOne[0]))
+			{
+				if (pTargetOne[0]->pev->takedamage)
+				{
+					pTargetOne[0]->TakeDamage(m_pPlayer->pev, pTargetOne[0]->pev, flDamage * 0.5, ID_DMG_MP5);
+				}
+
+				if (TargetExists(pTargetTwo[0]))
+				{
+					if (pTargetTwo[0]->pev->takedamage)
+					{
+						pTargetTwo[0]->TakeDamage(m_pPlayer->pev, pTargetTwo[0]->pev, flDamage * 0.25, ID_DMG_MP5);
+					}
+
+					if (TargetExists(pTargetThree[0]))
+					{
+						if (pTargetThree[0]->pev->takedamage)
+						{
+							pTargetThree[0]->TakeDamage(m_pPlayer->pev, pTargetThree[0]->pev, flDamage * 0.125, ID_DMG_MP5);
+						}
 					}
 				}
 			}
 		}
 		else
 		{
-			if (m_pBeams[0])
+			if (TargetExists(pTargetOne[0]))
 			{
-				TraceResult tr;
-				Vector vecSrc = m_pPlayer->GetGunPosition() - gpGlobals->v_up * 2;
-				Vector vecDir = gpGlobals->v_forward;
-				float flDist = 8192;
-				UTIL_TraceLine(vecSrc, vecSrc + vecDir * flDist, dont_ignore_monsters, ENT(m_pPlayer->pev), &tr);
-				m_pBeams[0]->PointEntInit(tr.vecEndPos, m_pPlayer->entindex());
-				m_pBeams[0]->SetEndAttachment(1);
+				if (pTargetOne[0]->pev->takedamage)
+				{
+					pTargetOne[0]->TakeDamage(m_pPlayer->pev, pTargetOne[0]->pev, flDamage, ID_DMG_MP5);
+				}
 			}
 		}
 	}
 }
 
-// PrimaryAttack
-// On continuous mode: Continuously shoots a single bolt of light forward in a straight line (cells)
-// On charged mode: Charge up an attack that produces a single powerful bolt (plasma cells)
-void CLightningGun::PrimaryAttack(void)
+// Make the fucking beams
+void CLightningGun::MakeBeams(void)
+{
+	if (m_pPlayer)
+	{
+		if (HasWeaponStatusFlags(DMC_LIGHT_STF_ATTACKING))
+		{
+			if (m_iNumTargets > 0)
+			{
+				// Main tri beams
+				if (HasWeaponStatusFlags(DMC_LIGHT_STF_TRI))
+				{
+					for (int i = 0; i < 3; i++)
+					{
+						if (TargetExists(pTargetOne[i]))
+						{
+							// Draw the Beam
+							if (!m_pBeams[i])
+							{
+								m_pBeams[i] = CBeam::BeamCreate("sprites/lgtning.spr", 50);
+								m_pBeams[i]->PointsInit(m_pPlayer->GetGunPosition() - gpGlobals->v_up * 2, pTargetOne[i]->Center());
+								m_pBeams[i]->SetColor(128, 128, 255);
+								m_pBeams[i]->SetBrightness(255);
+								m_pBeams[i]->SetNoise(20);
+								m_pBeams[i]->LiveForTime(0.1);
+								/*
+								MESSAGE_BEGIN(MSG_PVS, SVC_TEMPENTITY, pev->origin, pev);
+								WRITE_BYTE(TE_DLIGHT);
+								WRITE_SHORT(0);	// entity to follow
+								WRITE_COORD(pTargetOne[i]->Center().x); // x
+								WRITE_COORD(pTargetOne[i]->Center().y); // y
+								WRITE_COORD(pTargetOne[i]->Center().z); // z
+								WRITE_COORD(1); // radius
+								WRITE_BYTE(128); // r
+								WRITE_BYTE(128); // g
+								WRITE_BYTE(255); // b
+								WRITE_BYTE(gpGlobals->time + 0.05); // life
+								WRITE_BYTE(1); // decay rate
+								MESSAGE_END();
+								*/
+							}
+						}
+					}
+				}
+
+				// Chain beams
+				if (HasWeaponStatusFlags(DMC_LIGHT_STF_CHAIN))
+				{
+					for (int i = 0; i < 3; i++)
+					{
+						if (TargetExists(pTargetOne[i]))
+						{
+							if (TargetExists(pTargetTwo[i]))
+							{
+								if (!m_pBeams[i + 3])
+								{
+									m_pBeams[i + 3] = CBeam::BeamCreate("sprites/lgtning.spr", 50);
+									m_pBeams[i + 3]->PointsInit(pTargetOne[i]->Center(), pTargetTwo[i]->Center());
+									m_pBeams[i + 3]->SetColor(128, 128, 255);
+									m_pBeams[i + 3]->SetBrightness(255);
+									m_pBeams[i + 3]->SetNoise(20);
+									m_pBeams[i + 3]->LiveForTime(0.1);
+
+									if (TargetExists(pTargetThree[i]))
+									{
+										if (!m_pBeams[i + 6])
+										{
+											m_pBeams[i + 6] = CBeam::BeamCreate("sprites/lgtning.spr", 50);
+											m_pBeams[i + 6]->PointsInit(pTargetTwo[i]->Center(), pTargetThree[i]->Center());
+											m_pBeams[i + 6]->SetColor(128, 128, 255);
+											m_pBeams[i + 6]->SetBrightness(255);
+											m_pBeams[i + 6]->SetNoise(20);
+											m_pBeams[i + 6]->LiveForTime(0.1);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			// If we're doing neither targeting types
+			if (!HasWeaponStatusFlags(DMC_LIGHT_STF_TRI))
+			{
+				// Draw the Beam
+				if (!m_pBeams[0])
+				{
+					Vector vecSrc = m_pPlayer->GetGunPosition() - gpGlobals->v_up * 2;
+					TraceResult tr;
+					Vector anglesAim = m_pPlayer->pev->v_angle + m_pPlayer->pev->punchangle;
+					UTIL_MakeVectors(anglesAim);
+					anglesAim.x = -anglesAim.x;
+					Vector vecDir = gpGlobals->v_forward;
+					float flDist = 8192;
+					UTIL_TraceLine(vecSrc, vecSrc + vecDir * flDist, dont_ignore_monsters, ENT(m_pPlayer->pev), &tr);
+					m_pBeams[0] = CBeam::BeamCreate("sprites/lgtning.spr", 50);
+					m_pBeams[0]->PointEntInit(tr.vecEndPos, m_pPlayer->entindex());
+					m_pBeams[0]->SetEndAttachment(1);
+					m_pBeams[0]->SetColor(128, 128, 255);
+					m_pBeams[0]->SetBrightness(255);
+					m_pBeams[0]->SetNoise(20);
+					m_pBeams[0]->LiveForTime(0.1);
+				}
+			}
+		}
+	}
+}
+
+void CLightningGun::UpdateBeamPosition(void)
+{
+	if (m_pPlayer)
+	{
+		ClearBeams(-1);
+		MakeBeams();
+		return;
+	}
+}
+
+void CLightningGun::RegularAttack(void)
 {
 	// Die if you use this weapon in the water
 	if (WaterDischarge()) return;
 
-	// Vector computations and trace attack
-	TraceResult tr;
-	CBaseEntity* pEntity;
-	Vector anglesAim = m_pPlayer->pev->v_angle + m_pPlayer->pev->punchangle;
-	UTIL_MakeVectors(anglesAim);
-
-	anglesAim.x = -anglesAim.x;
-	Vector vecSrc = m_pPlayer->GetGunPosition() - gpGlobals->v_up * 2;
-	Vector vecDir = gpGlobals->v_forward;
-
-	float flDist = 8192;
-	UTIL_TraceLine(vecSrc, vecSrc + vecDir * flDist, dont_ignore_monsters, ENT(m_pPlayer->pev), &tr);
-	pEntity = CBaseEntity::Instance(tr.pHit);
-
-	float flDamage = gSkillData.plrDmgShockTase;
-	if (pEntity)
+	UpdateBodygroup();
+	
+	// Most of the weapon functions are done here
+	if (!HasWeaponStatusFlags(DMC_LIGHT_STF_ATTACKING))
+		SetWeaponStatusFlags(DMC_LIGHT_STF_ATTACKING, TRUE);
+	ClearBeams(-1);
+	ClearTargets(-1);
+	BOOL bProceed = AcquireTargets();
+	if (bProceed || !HasWeaponStatusFlags(DMC_LIGHT_STF_TRI))
 	{
-		if (pEntity->pev->takedamage)
-		{
-			pEntity->TakeDamage(m_pPlayer->pev, pEntity->pev, 100, ID_DMG_MP5);
-		}
-	}
-
-	// Draw the Beam
-	if (!m_pBeams[0])
-	{
-		m_pBeams[0] = CBeam::BeamCreate("sprites/lgtning.spr", 50);
-		m_pBeams[0]->PointEntInit(tr.vecEndPos, m_pPlayer->entindex());
-		m_pBeams[0]->SetEndAttachment(1);
-		m_pBeams[0]->SetColor(128, 128, 255);
-		m_pBeams[0]->SetBrightness(255);
-		m_pBeams[0]->SetNoise(20);
-		m_flBeamsEnd[0] = 0.1;
-
-		MESSAGE_BEGIN(MSG_PVS, SVC_TEMPENTITY, pev->origin, pev);
-		WRITE_BYTE(TE_DLIGHT);
-		WRITE_SHORT(0);	// entity to follow
-		WRITE_COORD(pev->origin.x); // x
-		WRITE_COORD(pev->origin.y); // y
-		WRITE_COORD(pev->origin.z); // z
-		WRITE_COORD(1); // radius
-		WRITE_BYTE(128); // r
-		WRITE_BYTE(128); // g
-		WRITE_BYTE(255); // b
-		WRITE_BYTE(gpGlobals->time + 0.05); // life
-		WRITE_BYTE(1); // decay rate
-		MESSAGE_END();
-
-		MESSAGE_BEGIN(MSG_PVS, SVC_TEMPENTITY, pev->origin, pev);
-		WRITE_BYTE(TE_DLIGHT);
-		WRITE_SHORT(0);	// entity to follow
-		WRITE_COORD(tr.vecEndPos.x); // x
-		WRITE_COORD(tr.vecEndPos.y); // y
-		WRITE_COORD(tr.vecEndPos.z); // z
-		WRITE_COORD(1); // radius
-		WRITE_BYTE(128); // r
-		WRITE_BYTE(128); // g
-		WRITE_BYTE(255); // b
-		WRITE_BYTE(gpGlobals->time + 0.05); // life
-		WRITE_BYTE(1); // decay rate
-		MESSAGE_END();
+		MakeBeams();
 	}
 	else
 	{
-		// Extend life of beam otherwise, let functions update position
-		m_flBeamsEnd[0] = 0.1;
+		SetWeaponStatusFlags(DMC_LIGHT_STF_ATTACKING | DMC_LIGHT_STF_TRI, FALSE);
+		return;
 	}
 
-#ifndef CLIENT_DLL
-	if (UTIL_PointContents(tr.vecEndPos) != CONTENTS_WATER)
-	{
-		UTIL_Sparks(tr.vecEndPos);
-		/*
-		//if (m_iBoltsStored > GetMaxAmmo1() / 2)
-			UTIL_DecalTrace(&tr, DECAL_OFSCORCH4 + RANDOM_LONG(0, 2));
-		else
-			UTIL_DecalTrace(&tr, DECAL_OFSMSCORCH1 + RANDOM_LONG(0, 2));\
-		*/
-	}
-#endif
+	DamageTargets();
 
-	UpdateBodygroup();
+	// Create light on the weapon itself
+	MESSAGE_BEGIN(MSG_PVS, SVC_TEMPENTITY, pev->origin, pev);
+	WRITE_BYTE(TE_DLIGHT);
+	WRITE_SHORT(0);	// entity to follow
+	WRITE_COORD(pev->origin.x); // x
+	WRITE_COORD(pev->origin.y); // y
+	WRITE_COORD(pev->origin.z); // z
+	WRITE_COORD(1); // radius
+	WRITE_BYTE(128); // r
+	WRITE_BYTE(128); // g
+	WRITE_BYTE(255); // b
+	WRITE_BYTE(gpGlobals->time + 0.1); // life
+	WRITE_BYTE(1); // decay rate
+	MESSAGE_END();
 
 	int iAnim = m_pPlayer->pev->savedvanim;
 	float flFramerate = m_pPlayer->pev->savedvframerate;
@@ -517,31 +820,26 @@ void CLightningGun::PrimaryAttack(void)
 		byFrame = m_pPlayer->pev->savedvframe = (byte)0;
 	}
 
-	PLAYBACK_EVENT_FULL(FEV_NOTHOST, m_pPlayer->edict(), m_usLight1, 0.0, (float*)&g_vecZero, (float*)&g_vecZero, vecDir.x, vecDir.y, 0, 0,
+	PLAYBACK_EVENT_FULL(FEV_NOTHOST, m_pPlayer->edict(), m_usLight1, 0.0, (float*)&g_vecZero, (float*)&g_vecZero, 0, 0, 0, 0,
 		bUpdateSound, bUpdateAnimation,
 		(float*)&g_vecZero, (float*)&g_vecZero, iAnim, flFramerate, byFrame);
-
-	/*
-	if (m_pPlayer->m_flInfiniteAmmo > 0)
-	{
-		m_flNextRoachAnim = 0.23f;
-		m_iRoachAnimState = RAS_STARTTOLOOP;
-	}
-	else
-	{
-		m_pPlayer->m_rgAmmo[m_iPrimaryAmmoType] -= m_iBoltsStored;
-		m_iBoltsStored = 0;
-		m_iRoachAnimState = RAS_NONE;
-		m_flNextRoachAnim = -1.0f;
-	}
-	*/
 
 	m_flNextPrimaryAttack = UTIL_WeaponTimeBase() + 0.1;
 	m_flNextSecondaryAttack = UTIL_WeaponTimeBase() + 0.1;
 	m_flNextTertiaryAttack = UTIL_WeaponTimeBase() + 0.1;
 	m_flNextReload = UTIL_WeaponTimeBase() + 1.53;
 	m_flNextWeaponIdle = UTIL_WeaponTimeBase() + 1.53;// idle pretty soon after shooting.
+
 	UnsetIdle();
+}
+
+// PrimaryAttack
+// On continuous mode: Continuously shoots a single bolt of light forward in a straight line (cells)
+// On charged mode: Charge up an attack that produces a single powerful bolt (plasma cells)
+void CLightningGun::PrimaryAttack(void)
+{
+	SetWeaponStatusFlags(DMC_LIGHT_STF_TRI, FALSE);
+	RegularAttack();
 }
 
 //===========================================================================================================
@@ -560,153 +858,34 @@ void CLightningGun::PrimaryAttack(void)
 //===========================================================================================================
 void CLightningGun::SecondaryAttack(void)
 {
-	// Die if you use this weapon in the water
-	if (WaterDischarge()) return;
-
-	TraceResult tr;
-	CBaseEntity* pEntity;
-	Vector anglesAim = m_pPlayer->pev->v_angle + m_pPlayer->pev->punchangle;
-	UTIL_MakeVectors(anglesAim);
-
-	anglesAim.x = -anglesAim.x;
-	Vector vecSrc = m_pPlayer->GetGunPosition() - gpGlobals->v_up * 2;
-	Vector vecDir = gpGlobals->v_forward;
-
-	int numTargets = 0; // Use this to keep track of how many targets we've acquired
-
-	pEntity = NULL;
-	while ((pEntity = UTIL_FindEntityInSphere(pEntity, vecSrc, 8192)) != NULL)
-	{
-		//ALERT(at_console, "Found: %s\n", STRING(pEntity->pev->classname));
-		if (pEntity == this || pEntity == m_pPlayer)
-		{
-			continue;
-		}
-		
-		const char* pStr = STRING(pEntity->pev->classname);
-		if (m_pPlayer->FVisible(pEntity))
-		{
-			if (pEntity->CanBeShocked())
-			{
-				if (pEntity->IsAlive())
-				{
-					//ALERT(at_console, "Got: %s\n", STRING(pEntity->pev->classname));
-#ifndef CLIENT_DLL
-					pTargetOne[numTargets] = pEntity;
-					numTargets++;
-#endif
-				}
-			}
-		}
-
-	}
-
-	MESSAGE_BEGIN(MSG_PVS, SVC_TEMPENTITY, pev->origin, pev);
-	WRITE_BYTE(TE_DLIGHT);
-	WRITE_SHORT(0);	// entity to follow
-	WRITE_COORD(pev->origin.x); // x
-	WRITE_COORD(pev->origin.y); // y
-	WRITE_COORD(pev->origin.z); // z
-	WRITE_COORD(1); // radius
-	WRITE_BYTE(128); // r
-	WRITE_BYTE(128); // g
-	WRITE_BYTE(255); // b
-	WRITE_BYTE(gpGlobals->time + 0.05); // life
-	WRITE_BYTE(1); // decay rate
-	MESSAGE_END();
-
-	if (numTargets > 0)
-	{
-		for (int i = 0; i < numTargets; i++)
-		{
-			if (pTargetOne[i])
-			{
-				// The goal here is simple
-				float flDamage = gSkillData.plrDmgShockTase * 1.0 + 0.33 * (3 - numTargets);
-				if (pTargetOne[i]->pev->takedamage)
-				{
-					pTargetOne[i]->TakeDamage(m_pPlayer->pev, pTargetOne[i]->pev, 5, ID_DMG_MP5);
-				}
-				// Draw the Beam
-				if (!m_pBeams[i])
-				{
-					m_pBeams[i] = CBeam::BeamCreate("sprites/lgtning.spr", 50);
-					m_pBeams[i]->PointEntInit(pTargetOne[i]->Center(), m_pPlayer->entindex());
-					m_pBeams[i]->SetEndAttachment(1);
-					m_pBeams[i]->SetColor(128, 128, 255);
-					m_pBeams[i]->SetBrightness(255);
-					m_pBeams[i]->SetNoise(20);
-					m_flBeamsEnd[i] = 0.1;
-
-					MESSAGE_BEGIN(MSG_PVS, SVC_TEMPENTITY, pev->origin, pev);
-					WRITE_BYTE(TE_DLIGHT);
-					WRITE_SHORT(0);	// entity to follow
-					WRITE_COORD(pTargetOne[i]->Center().x); // x
-					WRITE_COORD(pTargetOne[i]->Center().y); // y
-					WRITE_COORD(pTargetOne[i]->Center().z); // z
-					WRITE_COORD(1); // radius
-					WRITE_BYTE(128); // r
-					WRITE_BYTE(128); // g
-					WRITE_BYTE(255); // b
-					WRITE_BYTE(gpGlobals->time + 0.05); // life
-					WRITE_BYTE(1); // decay rate
-					MESSAGE_END();
-				}
-				else
-				{
-					m_flBeamsEnd[i] = 0.1;
-				}
-			}
-		}
-	}
-	else
-	{
-		// Randomly shoot beams and waste cells
-	}
-
-	UpdateBodygroup();
-
-	int iAnim = m_pPlayer->pev->savedvanim;
-	float flFramerate = m_pPlayer->pev->savedvframerate;
-	byte byFrame = m_pPlayer->pev->savedvframe;
-
-	BOOL bUpdateSound = FALSE;
-	BOOL bUpdateAnimation = FALSE;
-
-	if (m_flNextSoundReset <= 0.0f)
-	{
-		bUpdateSound = TRUE;
-		m_flNextSoundReset = 0.60f;
-	}
-
-	if (m_flNextAnimReset <= 0.0f)
-	{
-		bUpdateAnimation = TRUE;
-		m_flNextAnimReset = 0.16f;
-		iAnim = m_pPlayer->pev->savedvanim = LIGHT_FIRE;
-		flFramerate = m_pPlayer->pev->savedvframerate = 1.0f;
-		byFrame = m_pPlayer->pev->savedvframe = (byte)0;
-	}
-
-	PLAYBACK_EVENT_FULL(FEV_NOTHOST, m_pPlayer->edict(), m_usLight1, 0.0, (float*)&g_vecZero, (float*)&g_vecZero, vecDir.x, vecDir.y, 0, 0,
-		bUpdateSound, bUpdateAnimation,
-		(float*)&g_vecZero, (float*)&g_vecZero, iAnim, flFramerate, byFrame);
-
-	m_flNextPrimaryAttack = UTIL_WeaponTimeBase() + 0.1;
-	m_flNextSecondaryAttack = UTIL_WeaponTimeBase() + 0.1;
-	m_flNextTertiaryAttack = UTIL_WeaponTimeBase() + 0.1;
-	m_flNextReload = UTIL_WeaponTimeBase() + 1.53;
-	m_flNextWeaponIdle = UTIL_WeaponTimeBase() + 1.53;// idle pretty soon after shooting.
-
-	UnsetIdle();
+	SetWeaponStatusFlags(DMC_LIGHT_STF_TRI, TRUE);
+	RegularAttack();
 }
 
 // TertiaryAttack
-// If held, enable chaining when applicable
+// Toggle chaining
 void CLightningGun::TertiaryAttack(void)
 {
-
+	if (HasWeaponStatusFlags(DMC_LIGHT_STF_ALT))
+	{
+		// Fire plasma ball
+	}
+	else
+	{
+		SetWeaponStatusFlags(DMC_LIGHT_STF_CHAIN, !HasWeaponStatusFlags(DMC_LIGHT_STF_CHAIN));
+		ALERT(at_console, "DMC_LIGHT_STF_CHAIN: %d\n", HasWeaponStatusFlags(DMC_LIGHT_STF_CHAIN));
+		if (HasWeaponStatusFlags(DMC_LIGHT_STF_TRI | DMC_LIGHT_STF_ATTACKING, FC_ANY))
+		{
+			ClearTargets(-1);
+			ClearBeams(-1);
+			SetWeaponStatusFlags(DMC_LIGHT_STF_TRI | DMC_LIGHT_STF_ATTACKING, FALSE);
+		}
+		m_flNextPrimaryAttack = UTIL_WeaponTimeBase() + 0.5;
+		m_flNextSecondaryAttack = UTIL_WeaponTimeBase() + 0.5;
+		m_flNextTertiaryAttack = UTIL_WeaponTimeBase() + 0.5;
+	}
 }
+
 
 // Melee swing
 void CLightningGun::QuaternaryAttack(void)
@@ -747,6 +926,15 @@ void CLightningGun::Reload(void)
 
 	if (ShouldReload(0))
 	{
+		if (HasWeaponStatusFlags(DMC_LIGHT_STF_TRI | DMC_LIGHT_STF_ATTACKING, FC_ANY))
+		{
+			ClearTargets(-1);
+			ClearBeams(-1);
+			SetWeaponStatusFlags(DMC_LIGHT_STF_TRI | DMC_LIGHT_STF_ATTACKING, FALSE);
+			m_flNextPrimaryAttack = UTIL_WeaponTimeBase() + 1.43;
+			m_flNextSecondaryAttack = UTIL_WeaponTimeBase() + 1.43;
+			m_flNextTertiaryAttack = UTIL_WeaponTimeBase() + 1.43;
+		}
 		SetReloadStart();
 	}
 	else
@@ -761,6 +949,17 @@ void CLightningGun::Reload(void)
 
 void CLightningGun::WeaponIdle(void)
 {
+	// If we're in any of these states, clear beams and targets
+	if (HasWeaponStatusFlags(DMC_LIGHT_STF_TRI | DMC_LIGHT_STF_ATTACKING, FC_ANY))
+	{
+		ClearTargets(-1);
+		ClearBeams(-1);
+		SetWeaponStatusFlags(DMC_LIGHT_STF_TRI | DMC_LIGHT_STF_ATTACKING, FALSE);
+		m_flNextPrimaryAttack = UTIL_WeaponTimeBase() + 1.43;
+		m_flNextSecondaryAttack = UTIL_WeaponTimeBase() + 1.43;
+		m_flNextTertiaryAttack = UTIL_WeaponTimeBase() + 1.43;
+	}
+
 	return;
 
 	ResetEmptySound();
