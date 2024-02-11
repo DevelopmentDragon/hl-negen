@@ -22,6 +22,209 @@
 #include "player.h"
 #include "soundent.h"
 #include "basemonster.h"
+#include "gamerules.h"
+
+#ifndef CLIENT_DLL
+#define TESLA_ORB_VELOCITY_MAX	1250
+
+LINK_ENTITY_TO_CLASS(proj_teslaorb, CTeslaOrb);
+
+CTeslaOrb::CTeslaOrb(void)
+{
+
+}
+
+CTeslaOrb* CTeslaOrb::OrbCreate(BOOL bExplode)
+{
+	// Create a new entity with CCrossbowBolt private data
+	CTeslaOrb* pOrb = GetClassPtr((CTeslaOrb*)NULL);
+	pOrb->pev->classname = MAKE_STRING("proj_teslaorb");	// g-cont. enable save\restore
+	pOrb->Spawn();
+
+	return pOrb;
+}
+
+void CTeslaOrb::Spawn()
+{
+	Precache();
+	pev->movetype = MOVETYPE_FLY;
+	pev->solid = SOLID_BBOX;
+
+	pev->gravity = 0.5;
+	SET_MODEL(ENT(pev), "models/proj_teslaorb.mdl");
+	UTIL_SetOrigin(pev, pev->origin);
+	UTIL_SetSize(pev, Vector(0, 0, 0), Vector(0, 0, 0));
+	pev->dmg = 40;
+
+	SetTouch(&CTeslaOrb::OrbTouch);
+	SetThink(&CTeslaOrb::OrbThink);
+	pev->nextthink = gpGlobals->time + 0.2;
+}
+
+
+void CTeslaOrb::Precache()
+{
+	PRECACHE_MODEL("models/crossbow_bolt.mdl");
+	PRECACHE_SOUND("weapons/crossbow/hitbod.wav");
+	PRECACHE_SOUND("weapons/crossbow/hit.wav");
+	PRECACHE_SOUND("weapons/crossbow/fly.wav");
+	PRECACHE_SOUND("weapons/crossbow/exp.wav");
+	PRECACHE_SOUND("fvox/beep.wav");
+	m_iTrail = PRECACHE_MODEL("sprites/lgtning.spr");
+}
+
+
+int	CTeslaOrb::Classify(void)
+{
+	return	CLASS_NONE;
+}
+
+void CTeslaOrb::OrbTouch(CBaseEntity* pOther)
+{
+	SetTouch(NULL);
+	SetThink(NULL);
+
+	TraceResult tr = UTIL_GetGlobalTrace();
+	entvars_t* pevOwner = NULL;
+
+	if (pev->owner)
+		pevOwner = VARS(pev->owner);
+
+	pev->owner = NULL; // can't traceline attack owner if this is set
+
+	// UNDONE: this needs to call TraceAttack instead
+	//ClearMultiDamage( );
+
+	int iContents = UTIL_PointContents(pev->origin);
+	int iScale = 10;
+
+	MESSAGE_BEGIN(MSG_PVS, SVC_TEMPENTITY, pev->origin);
+	WRITE_BYTE(TE_EXPLOSION);
+	WRITE_COORD(pev->origin.x);
+	WRITE_COORD(pev->origin.y);
+	WRITE_COORD(pev->origin.z);
+	if (iContents != CONTENTS_WATER)
+	{
+		WRITE_SHORT(g_sModelIndexFireball);
+	}
+	else
+	{
+		WRITE_SHORT(g_sModelIndexWExplosion);
+	}
+	WRITE_BYTE(iScale); // scale * 10
+	WRITE_BYTE(15); // framerate
+	WRITE_BYTE(TE_EXPLFLAG_NOSOUND);
+	MESSAGE_END();
+
+	EMIT_SOUND(ENT(pev), CHAN_WEAPON, "weapons/crossbow/exp.wav", VOL_NORM, 0.3f);
+
+
+	if (pOther)
+	{
+		if (pOther->pev->takedamage)
+		{
+//			pOther->TraceAttack(pevOwner, gSkillData.plrDmgCrossbowBolt + pev->dmg / 2, pev->velocity.Normalize(), &tr, DMG_BULLET | DMG_NEVERGIB, ID_DMG_CROSSBOW_BOLT);
+		}
+	}
+
+//	::RadiusDamage(pev->origin, pev, pevOwner, gSkillData.plrDmgCrossbowBolt, 128, CLASS_NONE, DMG_BLAST | DMG_ALWAYSGIB, ID_DMG_CROSSBOW_BOLT);
+
+//	UTIL_DecalTrace(&tr, DECAL_OFSMSCORCH1 + RANDOM_LONG(0, 2));
+
+	pev->velocity = Vector(0, 0, 0);
+	// play body "thwack" sound
+
+	EMIT_SOUND(ENT(pev), CHAN_BODY, "weapons/crossbow/hitbod.wav", 1, ATTN_NORM);
+
+	if (!g_pGameRules->IsMultiplayer())
+	{
+		Killed(pev, GIB_NEVER);
+	}
+
+	SetThink(&CBaseEntity::SUB_Remove);
+	pev->nextthink = gpGlobals->time;// this will get changed below if the bolt is allowed to stick in what it hit.
+
+}
+
+void CTeslaOrb::OrbThink(void)
+{
+	// If at any point, it's underwater, so underwater stuff
+	if (FALSE)
+	{
+
+	}
+
+	// If charge depletes, remove
+	chargecheck:
+	if (GetCharge() <= 0)
+	{
+		pev->nextthink = gpGlobals->time;
+		SetThink(NULL);
+		SetTouch(NULL);
+		UTIL_Remove(this);
+		return;
+	}
+
+	// Occasionally zap
+
+
+	// Run timer
+	if (GetDrainTime() <= 0)
+	{
+		SetCharge(GetCharge() - GetDrainRate());
+		if (GetCharge() <= 0)
+			goto chargecheck;
+		SetDrainTime(GetDrainInterval());
+	}
+	else
+	{
+		SetDrainTime(max(GetDrainTime() - 0.01, 0.0f));
+	}
+
+	// Next think
+	pev->nextthink = gpGlobals->time + 0.01;
+}
+
+void CTeslaOrb ::ExplodeThink(void)
+{
+	int iContents = UTIL_PointContents(pev->origin);
+	int iScale;
+
+	pev->dmg = 40;
+	iScale = 10;
+
+	MESSAGE_BEGIN(MSG_PVS, SVC_TEMPENTITY, pev->origin);
+	WRITE_BYTE(TE_EXPLOSION);
+	WRITE_COORD(pev->origin.x);
+	WRITE_COORD(pev->origin.y);
+	WRITE_COORD(pev->origin.z);
+	if (iContents != CONTENTS_WATER)
+	{
+		WRITE_SHORT(g_sModelIndexFireball);
+	}
+	else
+	{
+		WRITE_SHORT(g_sModelIndexWExplosion);
+	}
+	WRITE_BYTE(iScale); // scale * 10
+	WRITE_BYTE(15); // framerate
+	WRITE_BYTE(TE_EXPLFLAG_NONE);
+	MESSAGE_END();
+
+	entvars_t* pevOwner;
+
+	if (pev->owner)
+		pevOwner = VARS(pev->owner);
+	else
+		pevOwner = NULL;
+
+	pev->owner = NULL; // can't traceline attack owner if this is set
+
+//	::RadiusDamage(pev->origin, pev, pevOwner, pev->dmg, 128, CLASS_NONE, DMG_BLAST | DMG_ALWAYSGIB, ID_DMG_CROSSBOW_BOLT_BLAST);
+
+	UTIL_Remove(this);
+}
+#endif
 
 LINK_ENTITY_TO_CLASS(weapon_dmc_light, CLightningGun);
 
@@ -862,6 +1065,82 @@ void CLightningGun::SecondaryAttack(void)
 	RegularAttack();
 }
 
+void CLightningGun::ProjectileAttack(void)
+{
+	return;
+
+	// Die if you use this weapon in the water
+	if (WaterDischarge()) return;
+
+	TraceResult tr;
+
+	m_pPlayer->m_iWeaponVolume = LOUD_GUN_VOLUME;
+
+	int flags = 0;
+#if defined( CLIENT_WEAPONS )
+	flags = FEV_NOTHOST;
+#endif
+
+	UpdateBodygroup();
+
+	int iAnim = m_pPlayer->pev->savedvanim = LIGHT_FIRE;
+	float flFramerate = m_pPlayer->pev->savedvframerate = 1.0f;
+	byte byFrame = m_pPlayer->pev->savedvframe = (byte)0;
+
+//	PLAYBACK_EVENT_FULL(FEV_NOTHOST, m_pPlayer->edict(), m_usLight2, 0.0, (float*)&g_vecZero, (float*)&g_vecZero, 0, 0, 0, 0,
+//		bUpdateSound, bUpdateAnimation,
+//		(float*)&g_vecZero, (float*)&g_vecZero, iAnim, flFramerate, byFrame);
+
+	// player "shoot" animation
+	m_pPlayer->SetAnimation(PLAYER_ATTACK1);
+
+	Vector anglesAim = m_pPlayer->pev->v_angle + m_pPlayer->pev->punchangle;
+	UTIL_MakeVectors(anglesAim);
+
+	anglesAim.x = -anglesAim.x;
+	Vector vecSrc = m_pPlayer->GetGunPosition() - gpGlobals->v_up * 2;
+	Vector vecDir = gpGlobals->v_forward;
+
+	UTIL_TraceLine(vecSrc, vecSrc + gpGlobals->v_forward * 8192, dont_ignore_monsters, ENT(m_pPlayer->pev), &tr);
+
+#ifndef CLIENT_DLL
+//	CCrossbowBolt* pBolt = CCrossbowBolt::BoltCreate(m_bLoaded);
+//
+//	if (m_iTorque >= 100)
+//		pBolt->pev->origin = tr.vecEndPos;
+//	else
+//		pBolt->pev->origin = vecSrc;
+//	pBolt->pev->angles = anglesAim;
+//	pBolt->pev->owner = m_pPlayer->edict();
+//
+//	float flTorqueVelocity = BOLT_AIR_VELOCITY;
+//
+//	if (m_pPlayer->pev->waterlevel == 3)
+//		flTorqueVelocity = (float)((float)BOLT_WATER_VELOCITY + ((float)(BOLT_WATER_VELOCITY_MAX - BOLT_WATER_VELOCITY) * (float)m_iTorque / (float)100));
+//	else
+//		flTorqueVelocity = (float)((float)BOLT_AIR_VELOCITY + ((float)(BOLT_AIR_VELOCITY_MAX - BOLT_AIR_VELOCITY) * (float)m_iTorque / (float)100));
+//
+//	pBolt->pev->velocity = vecDir * flTorqueVelocity;
+//	pBolt->pev->speed = flTorqueVelocity;
+//	pBolt->pev->avelocity.z = 10;
+//	pBolt->pev->dmg = m_iTorque;
+//
+//	m_iTorque = 0;
+//	m_flNextTorque = -1.0f;
+//	m_bTorquing = FALSE;
+
+#endif
+
+
+	m_flNextPrimaryAttack = UTIL_WeaponTimeBase() + 0.47;
+	m_flNextSecondaryAttack = UTIL_WeaponTimeBase() + 0.47;
+	m_flNextTertiaryAttack = UTIL_WeaponTimeBase() + 0.47;
+	m_flNextReload = UTIL_WeaponTimeBase() + 0.47;
+	m_flNextWeaponIdle = UTIL_WeaponTimeBase() + 1.5;
+
+	UnsetIdle();
+}
+
 // TertiaryAttack
 // Toggle chaining
 void CLightningGun::TertiaryAttack(void)
@@ -869,6 +1148,7 @@ void CLightningGun::TertiaryAttack(void)
 	if (HasWeaponStatusFlags(DMC_LIGHT_STF_ALT))
 	{
 		// Fire plasma ball
+		ProjectileAttack();
 	}
 	else
 	{

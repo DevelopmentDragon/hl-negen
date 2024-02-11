@@ -1911,6 +1911,51 @@ private:
 
 };
 
+class CTeslaOrb : public CBaseEntity
+{
+public:
+	void Spawn(void);
+	void Precache(void);
+	int  Classify(void);
+	void EXPORT OrbThink(void);
+	void EXPORT ExplodeThink(void);
+	void EXPORT OrbTouch(CBaseEntity* pOther);
+
+	int m_iTrail;
+
+	float m_flDrainRate;
+	float GetDrainRate(void) { return m_flDrainRate; };
+	void SetDrainRate(float flDrainRate) { m_flDrainRate = flDrainRate; };
+
+	float m_flDrainInterval;
+	float GetDrainInterval(void) { return m_flDrainInterval; };
+	void SetDrainInterval(float flDrainInterval) { m_flDrainInterval = flDrainInterval; };
+
+	float m_flDrainTime;
+	float GetDrainTime(void) { return m_flDrainTime; };
+	void SetDrainTime(float flDrainTime) { m_flDrainTime = flDrainTime; };
+
+	float m_flCharge;
+	float GetCharge(void) { return m_flCharge; };
+	void SetCharge(float flCharge) { m_flCharge = flCharge; };
+
+	float m_flChargeMax;
+	float GetChargeMax(void) { return m_flChargeMax; };
+	void SetChargeMax(float flChargeMax) { m_flChargeMax = flChargeMax; };
+
+	float m_flNextZap;
+	float GetNextZap(void) { return m_flNextZap; };
+	void SetNextZap(float flNextZap) { m_flNextZap = flNextZap; };
+
+	float m_flZapInterval;
+	float GetZapInterval(void) { return m_flZapInterval; }
+	void SetZapInterval(float flZapInterval) { m_flZapInterval = flZapInterval; };
+
+	CTeslaOrb(void);
+
+	static CTeslaOrb* OrbCreate(BOOL bExplode);
+};
+
 class CLightningGun : public CBasePlayerWeapon
 {
 public:
@@ -1990,6 +2035,7 @@ public:
 	void BeamLogic(void);
 
 	void RegularAttack(void);
+	void ProjectileAttack(void);
 
 	CLightningGun(void);
 
