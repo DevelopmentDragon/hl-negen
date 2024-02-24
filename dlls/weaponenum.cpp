@@ -715,8 +715,12 @@ static const animinfo_t medkitAnimInfo[MEDKIT_LAST] =
 // Lightning Gun
 static const animinfo_t lightAnimInfo[LIGHT_LAST] =
 {
-	{ LIGHT_IDLE, 46, 30, false },
-	{ LIGHT_FIRE, 46, 30, false },
+	{ LIGHT_IDLE, 61, 20, true },
+	{ LIGHT_FIRE, 51, 30, false },
+	{ LIGHT_DRAW, 50, 40, false },
+	{ LIGHT_DRAW_EMPTY, 50, 40, false },
+	{ LIGHT_HOLSTER, 51, 40, false },
+	{ LIGHT_HOLSTER_EMPTY, 51, 40, false },
 };
 
 // Final

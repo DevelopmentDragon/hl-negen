@@ -343,7 +343,7 @@ void CLightningGun::Spawn(void)
 
 void CLightningGun::Precache(void)
 {
-	PRECACHE_MODEL("models/v_light.mdl");
+	PRECACHE_MODEL("models/v_dmc_light.mdl");
 	PRECACHE_MODEL("models/w_light.mdl");
 	PRECACHE_MODEL("models/p_light.mdl");
 
@@ -410,7 +410,8 @@ BOOL CLightningGun::Deploy(void)
 {
 	UpdateBodygroup();
 	UnsetIdle();
-	return DefaultDeploy("models/v_light.mdl", "models/p_light.mdl", LIGHT_IDLE, "mp5");
+	SetWeaponIdle(1.25f);
+	return DefaultDeploy("models/v_dmc_light.mdl", "models/p_light.mdl", (RANDOM_LONG(0,1)) ? LIGHT_DRAW : LIGHT_DRAW_EMPTY, "mp5");
 }
 
 void CLightningGun::Holster(int skiplocal)
@@ -1240,9 +1241,8 @@ void CLightningGun::WeaponIdle(void)
 		m_flNextTertiaryAttack = UTIL_WeaponTimeBase() + 1.43;
 	}
 
-	return;
-
 	ResetEmptySound();
+	ALERT(at_console, "Deploy time: %.5f\n", m_flNextWeaponIdle);
 
 	if (m_flNextWeaponIdle > UTIL_WeaponTimeBase())
 		return;
@@ -1252,6 +1252,6 @@ void CLightningGun::WeaponIdle(void)
 
 	UpdateBodygroup();
 	SendWeaponAnim(LIGHT_IDLE);
-	//m_flNextWeaponIdle = UTIL_WeaponTimeBase() + 5.125 * 2;
+	m_flNextWeaponIdle = UTIL_WeaponTimeBase() + 2.55 * 2;
 	SetIdle();
 }

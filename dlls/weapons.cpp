@@ -2415,7 +2415,7 @@ BOOL CBasePlayerWeapon :: DefaultDeploy( char *szViewModel, char *szWeaponModel,
 	SendWeaponAnim( iAnim, 1.0f, (byte)0, skiplocal );
 
 	m_pPlayer->m_flNextAttack = UTIL_WeaponTimeBase() + 0.5;
-	m_flNextWeaponIdle = UTIL_WeaponTimeBase() + 1.0;
+	//m_flNextWeaponIdle = UTIL_WeaponTimeBase() + 1.0;
 
 	return TRUE;
 }
