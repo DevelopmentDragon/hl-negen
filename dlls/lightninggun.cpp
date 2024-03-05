@@ -351,6 +351,7 @@ void CLightningGun::Precache(void)
 
 	PRECACHE_SOUND("weapons/dmc/light/fire.wav");
 	PRECACHE_SOUND("weapons/dmc/light/firechargepent.wav");
+	PRECACHE_SOUND("weapons/dmc/light/fidget_shock.wav");
 
 	m_usLight1 = PRECACHE_EVENT(1, "events/light1.sc");
 	m_usLight2 = PRECACHE_EVENT(1, "events/light2.sc");
@@ -843,6 +844,16 @@ void CLightningGun::DamageTargets(void)
 	}
 }
 
+// To prevent beams from ever crossing, we need to perform distance and angle checks on targets
+// Target that is closest to the left, should be targetted by the right side
+int GetAttachmentIndex(int iOriginal)
+{
+	if (iOriginal > 2 || iOriginal < 0)
+		return 0;
+	
+	return iOriginal + 1;
+}
+
 // Make the fucking beams
 void CLightningGun::MakeBeams(void)
 {
@@ -862,8 +873,9 @@ void CLightningGun::MakeBeams(void)
 							// Draw the Beam
 							if (!m_pBeams[i])
 							{
-								m_pBeams[i] = CBeam::BeamCreate("sprites/lgtning.spr", 50);
-								m_pBeams[i]->PointsInit(m_pPlayer->GetGunPosition() - gpGlobals->v_up * 2, pTargetOne[i]->Center());
+								m_pBeams[i] = CBeam::BeamCreate("sprites/lgtning.spr", 10);
+								m_pBeams[i]->PointEntInit(pTargetOne[i]->Center(), m_pPlayer->entindex() + 0x1000 * (i + 3));
+								m_pBeams[i]->SetEndAttachment(GetAttachmentIndex(i)); // This is fucking stupid
 								m_pBeams[i]->SetColor(128, 128, 255);
 								m_pBeams[i]->SetBrightness(255);
 								m_pBeams[i]->SetNoise(20);
@@ -899,7 +911,7 @@ void CLightningGun::MakeBeams(void)
 							{
 								if (!m_pBeams[i + 3])
 								{
-									m_pBeams[i + 3] = CBeam::BeamCreate("sprites/lgtning.spr", 50);
+									m_pBeams[i + 3] = CBeam::BeamCreate("sprites/lgtning.spr", 25);
 									m_pBeams[i + 3]->PointsInit(pTargetOne[i]->Center(), pTargetTwo[i]->Center());
 									m_pBeams[i + 3]->SetColor(128, 128, 255);
 									m_pBeams[i + 3]->SetBrightness(255);
@@ -910,7 +922,7 @@ void CLightningGun::MakeBeams(void)
 									{
 										if (!m_pBeams[i + 6])
 										{
-											m_pBeams[i + 6] = CBeam::BeamCreate("sprites/lgtning.spr", 50);
+											m_pBeams[i + 6] = CBeam::BeamCreate("sprites/lgtning.spr", 25);
 											m_pBeams[i + 6]->PointsInit(pTargetTwo[i]->Center(), pTargetThree[i]->Center());
 											m_pBeams[i + 6]->SetColor(128, 128, 255);
 											m_pBeams[i + 6]->SetBrightness(255);
@@ -939,7 +951,7 @@ void CLightningGun::MakeBeams(void)
 					Vector vecDir = gpGlobals->v_forward;
 					float flDist = 8192;
 					UTIL_TraceLine(vecSrc, vecSrc + vecDir * flDist, dont_ignore_monsters, ENT(m_pPlayer->pev), &tr);
-					m_pBeams[0] = CBeam::BeamCreate("sprites/lgtning.spr", 50);
+					m_pBeams[0] = CBeam::BeamCreate("sprites/lgtning.spr", 25);
 					m_pBeams[0]->PointEntInit(tr.vecEndPos, m_pPlayer->entindex());
 					m_pBeams[0]->SetEndAttachment(1);
 					m_pBeams[0]->SetColor(128, 128, 255);
@@ -1242,16 +1254,44 @@ void CLightningGun::WeaponIdle(void)
 	}
 
 	ResetEmptySound();
-	ALERT(at_console, "Deploy time: %.5f\n", m_flNextWeaponIdle);
 
 	if (m_flNextWeaponIdle > UTIL_WeaponTimeBase())
 		return;
 
-	// For now, don't re-idle if idle
-	if (IsIdle()) return;
+	// 5% chance of playing the special animations instead. Do not set idle as we still need to set it afterwards
+	if (RANDOM_LONG(0, 99) <= 5)
+	{
+		UpdateBodygroup();
+		// 25% chance of playing alternative fidget
+		if (RANDOM_LONG(0, 99) > 25)
+		{
+			SendWeaponAnim(LIGHT_FIDGET);
+			SetWeaponIdle(2.3f);
+		}
+		else
+		{
+			SendWeaponAnim(LIGHT_FIDGET2);
+			SetWeaponIdle(5.00f);
+		}
+		UnsetIdle();
+
+	}
+	else
+	{
+		// Ensure at least two successful loops
+		if (!IsIdle())
+		{
+			UpdateBodygroup();
+			SendWeaponAnim(LIGHT_IDLE);
+			SetWeaponIdle(3.05f * 2);
+			SetIdle();
+		}
+		else
+		{
+			// Only perform a single loop in this case
+			SetWeaponIdle(3.05f);
+		}
+	}
 
 	UpdateBodygroup();
-	SendWeaponAnim(LIGHT_IDLE);
-	m_flNextWeaponIdle = UTIL_WeaponTimeBase() + 2.55 * 2;
-	SetIdle();
 }

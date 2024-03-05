@@ -311,10 +311,8 @@ void CL_ProcessEntityUpdate( cl_entity_t *ent )
 	VectorCopy( ent->curstate.angles, ent->angles );
 
 	// initialize attachments for now
-	VectorCopy( ent->origin, ent->attachment[0] );
-	VectorCopy( ent->origin, ent->attachment[1] );
-	VectorCopy( ent->origin, ent->attachment[2] );
-	VectorCopy( ent->origin, ent->attachment[3] );
+	for (int i = 0; i < 12; i++)
+		VectorCopy( ent->origin, ent->attachment[i] );
 }
 
 /*
@@ -1067,10 +1065,9 @@ void CL_LinkPlayers( frame_t *frame )
 			CL_ComputePlayerOrigin( ent );
 		}
 
-		VectorCopy( ent->origin, ent->attachment[0] );
-		VectorCopy( ent->origin, ent->attachment[1] );
-		VectorCopy( ent->origin, ent->attachment[2] );
-		VectorCopy( ent->origin, ent->attachment[3] );
+		// initialize attachments for now
+		for (int i = 0; i < 12; i++)
+			VectorCopy(ent->origin, ent->attachment[i]);
 
 		CL_AddVisibleEntity( ent, ET_PLAYER );
 	}
@@ -1234,10 +1231,9 @@ void CL_LinkPacketEntities( frame_t *frame )
 			CL_ResetPositions( ent );
 		}
 
-		VectorCopy( ent->origin, ent->attachment[0] );
-		VectorCopy( ent->origin, ent->attachment[1] );
-		VectorCopy( ent->origin, ent->attachment[2] );
-		VectorCopy( ent->origin, ent->attachment[3] );
+		// initialize attachments for now
+		for (int i = 0; i < 12; i++)
+			VectorCopy(ent->origin, ent->attachment[i]);
 
 		CL_AddVisibleEntity( ent, ET_NORMAL );
 	}

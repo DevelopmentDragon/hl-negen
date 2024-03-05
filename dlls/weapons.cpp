@@ -2342,6 +2342,7 @@ void CBasePlayerWeapon::SendWeaponAnim(int iAnim, float flFramerate, byte byFram
 		skiplocal = 1;
 	else
 		skiplocal = 0;
+
 	m_pPlayer->pev->weaponanim = iAnim;
 	m_pPlayer->pev->savedvanim = iAnim;
 	m_pPlayer->pev->savedvframerate = flFramerate;

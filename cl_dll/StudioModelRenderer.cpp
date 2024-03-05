@@ -1164,7 +1164,7 @@ int CStudioModelRenderer::StudioDrawModel( int flags )
 		{
 			cl_entity_t *ent = gEngfuncs.GetEntityByIndex( m_pCurrentEntity->index );
 
-			memcpy( ent->attachment, m_pCurrentEntity->attachment, sizeof( vec3_t ) * 4 );
+			memcpy( ent->attachment, m_pCurrentEntity->attachment, sizeof( vec3_t ) * 12 );
 		}
 	}
 
@@ -1522,7 +1522,7 @@ int CStudioModelRenderer::StudioDrawPlayer( int flags, entity_state_t *pplayer )
 		{
 			cl_entity_t *ent = gEngfuncs.GetEntityByIndex( m_pCurrentEntity->index );
 
-			memcpy( ent->attachment, m_pCurrentEntity->attachment, sizeof( vec3_t ) * 4 );
+			memcpy( ent->attachment, m_pCurrentEntity->attachment, sizeof( vec3_t ) * 12 );
 		}
 	}
 
@@ -1601,7 +1601,7 @@ void CStudioModelRenderer::StudioCalcAttachments( void )
 	int i;
 	mstudioattachment_t *pattachment;
 
-	if ( m_pStudioHeader->numattachments > 4 )
+	if ( m_pStudioHeader->numattachments > 12 )
 	{
 		gEngfuncs.Con_DPrintf( "Too many attachments on %s\n", m_pCurrentEntity->model->name );
 		exit( -1 );

@@ -805,6 +805,8 @@ enum medkit_e
 enum dmg_light_e
 {
 	LIGHT_IDLE = 0,
+	LIGHT_FIDGET,
+	LIGHT_FIDGET2,
 	LIGHT_FIRE,
 	LIGHT_DRAW,
 	LIGHT_DRAW_EMPTY,

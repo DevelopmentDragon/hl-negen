@@ -512,10 +512,11 @@ void BeamEndModel( void )
 	model->origin[0] = player->origin[0] - 100;
 	model->origin[1] = player->origin[1];
 
-	model->attachment[0] = model->origin;
-	model->attachment[1] = model->origin;
-	model->attachment[2] = model->origin;
-	model->attachment[3] = model->origin;
+	// Attachments increased
+	for (int i = 0; i < 12; i++)
+	{
+		model->attachment[i] = model->origin;
+	}
 
 	gEngfuncs.CL_CreateVisibleEntity( ET_NORMAL, model );
 }
@@ -659,23 +660,66 @@ void DLLEXPORT HUD_StudioEvent( const struct mstudioevent_s *event, const struct
 	{
 	case 5001:
 		gEngfuncs.pEfxAPI->R_MuzzleFlash( (float *)&entity->attachment[0], atoi( event->options) );
-		break;
+	break;
 	case 5011:
 		gEngfuncs.pEfxAPI->R_MuzzleFlash( (float *)&entity->attachment[1], atoi( event->options) );
-		break;
+	break;
 	case 5021:
 		gEngfuncs.pEfxAPI->R_MuzzleFlash( (float *)&entity->attachment[2], atoi( event->options) );
-		break;
+	break;
 	case 5031:
 		gEngfuncs.pEfxAPI->R_MuzzleFlash( (float *)&entity->attachment[3], atoi( event->options) );
-		break;
+	break;
 	case 5002:
 		gEngfuncs.pEfxAPI->R_SparkEffect( (float *)&entity->attachment[0], atoi( event->options), -100, 100 );
-		break;
+	break;
+	case 5005:
+	{
+		// EXTREMELY UNSAFE: Add sanity checks
+		char argCull[255];
+		strcpy(argCull, (char*)event->options);
+
+		// Get sprite
+		char* token = strtok(argCull, " \t\n");
+		int modelindex;
+		struct model_s* mod = (model_s*)gEngfuncs.CL_LoadModel(token, &modelindex);
+
+		// Get attachment 1
+		token = strtok(NULL, " \t\n");
+		float* attach1 = (float*)&entity->attachment[atoi(token)];
+
+		// Get attachment 2
+		token = strtok(NULL, " \t\n");
+		float* attach2 = (float*)&entity->attachment[atoi(token)];
+
+		// Get attachment beam life span
+		token = strtok(NULL, " \t\n");
+		float life = atof(token);
+
+		// Get beam width
+		token = strtok(NULL, " \t\n");
+		float width = atof(token);
+
+		// Get beam amplitude
+		token = strtok(NULL, " \t\n");
+		float amplitude = atof(token);
+
+		// Get beam brightness
+		token = strtok(NULL, " \t\n");
+		float brightness = atof(token);
+
+		// Get beam speed
+		token = strtok(NULL, " \t\n");
+		float speed = atof(token);
+
+		//gEngfuncs.pEfxAPI->R_BeamLightning();
+		gEngfuncs.pEfxAPI->R_BeamPoints(attach1, attach2, modelindex, life, width, amplitude, brightness, speed, 0, 5, 255, 255, 255);
+	}
+	break;
 	// Client side sound
 	case 5004:		
 		gEngfuncs.pfnPlaySoundByNameAtLocation( (char *)event->options, 1.0, (float *)&entity->attachment[0] );
-		break;
+	break;
 	default:
 		break;
 	}

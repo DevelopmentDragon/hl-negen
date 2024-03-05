@@ -716,6 +716,8 @@ static const animinfo_t medkitAnimInfo[MEDKIT_LAST] =
 static const animinfo_t lightAnimInfo[LIGHT_LAST] =
 {
 	{ LIGHT_IDLE, 61, 20, true },
+	{ LIGHT_FIDGET, 46, 20, false },
+	{ LIGHT_FIDGET2, 113, 20, false },
 	{ LIGHT_FIRE, 51, 30, false },
 	{ LIGHT_DRAW, 50, 40, false },
 	{ LIGHT_DRAW_EMPTY, 50, 40, false },
